@@ -24,7 +24,7 @@ const productSchema = new Schema({
     min: 0,
     default: 0
   },
-  category: {
+  farm: {
     type: Schema.Types.ObjectId,
     ref: 'Farm',
     required: true
