@@ -68,8 +68,8 @@ function ExamplesNavbar() {
               <DropdownItem header tag="a">
                 Dropdown header
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Action
+              <DropdownItem href="#products" onClick={(e) => e.preventDefault()}>
+                Products
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 Another action

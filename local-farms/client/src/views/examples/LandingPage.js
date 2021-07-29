@@ -1,5 +1,6 @@
 import React from "react";
 
+
 // reactstrap components
 import {
   Button,
@@ -15,6 +16,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import ProductCarousel from "components/Body/ProductCarousel.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function LandingPage() {
@@ -123,6 +125,10 @@ function LandingPage() {
             </div>
           </Container>
         </div>
+{/*PRODUCTS SECTION*/}
+<ProductCarousel />
+      <div className="section section-products"></div>
+{/*TEAM SECTION*/}
         <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
@@ -256,6 +262,8 @@ function LandingPage() {
             </div>
           </Container>
         </div>
+
+
         <div className="section section-contact-us text-center">
           <Container>
             <h2 className="title">Want to work with us?</h2>
