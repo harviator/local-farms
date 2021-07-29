@@ -15,8 +15,13 @@ import {
 const items = [
   {
     src: require("assets/img/fruits.jpg").default,
-    altText: "Nature, United States",
-    caption: "Nature, United States",
+    altText: "Fresh Carrots",
+    name: "Fresh Carrots",
+    description: "Fresh Carrots from our local barrie Farm",
+    price: "1.73",
+    quantity: "100",
+    farm: "Barrie",  
+    cart: "ADD TO CART",
   },
   {
     src: require("assets/img/farm.jpg").default,
@@ -83,7 +88,10 @@ function CarouselSection() {
                     >
                       <img src={item.src} alt={item.altText} />
                       <div className="carousel-caption d-none d-md-block">
-                        <h5>{item.caption}</h5>
+                        <h3>{item.name}</h3>
+                        <p>{item.description}</p>
+                        <p>{item.price}|{item.quantity}|{item.farm}</p> {/*NEEDS TO GO TO Full Product card PAGE?*/}
+                        <button>{item.cart}</button> {/*NEEDS TO GO TO SHOPPING CART PAGE*/}
                       </div>
                     </CarouselItem>
                   );
