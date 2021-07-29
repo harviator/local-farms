@@ -2,49 +2,49 @@ import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../../utils/GlobalState';
 import {
-    UPDATE_CATEGORIES,
-    UPDATE_CURRENT_CATEGORY,
+    UPDATE_FARMS,
+    UPDATE_CURRENT_FARM,
 } from '../../utils/actions';
-import { QUERY_CATEGORIES } from '../../utils/queries';
+import { QUERY_FARMS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 
-function CategoryMenu() {
+function FarmMenu() {
     const [state, dispatch] = useStoreContext();
 
-    const { categories } = state;
+    const { farms } = state;
 
-    const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
+    const { loading, data: farmData } = useQuery(QUERY_FARMS);
 
     useEffect(() => {
-        if (categoryData) {
+        if (farmData) {
             dispatch({
-                type: UPDATE_CATEGORIES,
-                categories: categoryData.categories,
+                type: UPDATE_FARMS,
+                farms: farmData.farms,
             });
-            categoryData.categories.forEach((category) => {
-                idbPromise('categories', 'put', category);
+            farmData.farms.forEach((farm) => {
+                idbPromise('farms', 'put', farm);
             });
         } else if (!loading) {
-            idbPromise('categories', 'get').then((categories) => {
+            idbPromise('farms', 'get').then((farms) => {
                 dispatch({
-                    type: UPDATE_CATEGORIES,
-                    categories: categories,
+                    type: UPDATE_FARMS,
+                    farms: farms,
                 });
             });
         }
-    }, [categoryData, loading, dispatch]);
+    }, [farmData, loading, dispatch]);
 
     const handleClick = (id) => {
         dispatch({
-            type: UPDATE_CURRENT_CATEGORY,
-            currentCategory: id,
+            type: UPDATE_CURRENT_FARM,
+            currentfarm: id,
         });
     };
 
     return (
         <div>
-            <h2>Choose a Category:</h2>
-            {categories.map((item) => (
+            <h2>Choose a farm:</h2>
+            {farms.map((item) => (
                 <button
                     key={item._id}
                     onClick={() => {
@@ -58,4 +58,4 @@ function CategoryMenu() {
     );
 }
 
-export default CategoryMenu;
+export default FarmMenu;
