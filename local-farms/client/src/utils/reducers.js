@@ -71,13 +71,13 @@ export const reducer = (state, action) => {
     case UPDATE_FARMS:
       return {
         ...state,
-        categories: [...action.categories],
+        farms: [...action.farms],
       };
 
     case UPDATE_CURRENT_FARM:
       return {
         ...state,
-        currentCategory: action.currentCategory
+        currentFarm: action.currentFarm
       }
 
     default:
