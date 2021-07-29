@@ -65,7 +65,7 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
+              {/*<DropdownItem header tag="a">
                 Dropdown header
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -76,15 +76,28 @@ function ExamplesNavbar() {
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 Something else here
+              </DropdownItem>*/}
+              <DropdownItem divider></DropdownItem>
+              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                About
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Separated link
+                Products
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                One more separated link
+                Team
               </DropdownItem>
+              <DropdownItem divider></DropdownItem>
+              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                Get In Touch
+              </DropdownItem>
+              <DropdownItem divider></DropdownItem>
+              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                Work with us
+              </DropdownItem>
+
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
@@ -93,11 +106,8 @@ function ExamplesNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Now Ui Kit
+              Local Farm
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -117,17 +127,7 @@ function ExamplesNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
-              <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
-                </NavLink>
-              </NavItem>
+            <Nav navbar>              
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
@@ -167,6 +167,17 @@ function ExamplesNavbar() {
                   Follow us on Instagram
                 </UncontrolledTooltip>
               </NavItem>
+              <NavItem>
+                <NavLink to="/cart" tag={Link}>
+                <i className="fas fa-shopping-cart"></i>
+                </NavLink> 
+              </NavItem>
+              <NavItem>
+                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
+                  Have an issue?
+                </NavLink>
+              </NavItem>
+
             </Nav>
           </Collapse>
         </Container>
