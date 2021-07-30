@@ -72,10 +72,6 @@ ReactDOM.render(
           path="/landing-page"
           render={(props) => <LandingPage {...props} />}
         />
-         <Route
-          path="/products"
-          render={(props) => <Products {...props} />}
-        />
         <Route
           path="/profile-page"
           render={(props) => <ProfilePage {...props} />}

@@ -16,6 +16,13 @@ import {
   UncontrolledTooltip,
 } from "reactstrap";
 
+import Auth from '../../utils/auth'
+
+const logout = (event) => {
+  event.preventDefault()
+  Auth.logout()
+}
+
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -38,6 +45,46 @@ function ExamplesNavbar() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
+
+  function showNavigation() {
+    if (Auth.loggedIn()) {
+      return (
+        <>
+          <NavItem>
+            <NavLink to="/profile" tag={Link}>
+              Profile
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/checkout-page" tag={Link}>
+            <i class="fas fa-shopping-cart"></i>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/checkout-page" tag={Link}>
+            <i class="fas fa-shopping-cart"></i>
+            </NavLink>
+          </NavItem>
+        </>
+      )
+    } else {
+      return (
+        <>
+          <NavItem>
+            <NavLink to="/login-page" tag={Link}>
+              Log in
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="signup">
+              Sign up
+            </NavLink>
+          </NavItem>
+        </>
+      )
+    }
+  }
+
   return (
     <>
       {collapseOpen ? (
@@ -66,37 +113,37 @@ function ExamplesNavbar() {
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
               <DropdownItem header tag="a">
-                Dropdown header
+                Main Menu
               </DropdownItem>
               <DropdownItem href="#products" onClick={(e) => e.preventDefault()}>
-                Products
+                Shop
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Another action
+                Farms
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Something else here
+                Our Team
               </DropdownItem>
+              {/* <DropdownItem divider></DropdownItem> */}
+              {/* <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+                Our Story
+              </DropdownItem> */}
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Separated link
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                One more separated link
+                Contact us
               </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
+              href=""
               target="_blank"
               id="navbar-brand"
             >
-              Now Ui Kit
+              Menu
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              Main Menu
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -118,19 +165,12 @@ function ExamplesNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
-                </NavLink>
-              </NavItem>
+            
+            {showNavigation()}
+
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="https://twitter.com/"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -143,7 +183,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -156,7 +196,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   id="instagram-tooltip"
                 >
