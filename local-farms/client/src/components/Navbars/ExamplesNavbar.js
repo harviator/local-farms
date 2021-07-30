@@ -68,9 +68,10 @@ function ExamplesNavbar() {
               <DropdownItem header tag="a">
                 Dropdown header
               </DropdownItem>
-              <DropdownItem href="#products" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="/products" onClick={(e) => e.preventDefault()}>
                 Products
               </DropdownItem>
+              
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 Another action
               </DropdownItem>
@@ -156,7 +157,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="/products"
                   target="_blank"
                   id="instagram-tooltip"
                 >

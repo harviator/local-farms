@@ -1,48 +1,23 @@
 import React from "react";
-
 // reactstrap components
-import{
-    Card,
-    CardImg,
-    CardBody,
-    Row,
-    Container,
-    CardText,
-    CardTitle,
-      Button,
-      NavItem,
-      Form,
-      FormGroup,
-      Input,
-      NavLink,
-      Nav,
-      CardHeader,
-      TabContent,
-      TabPane
-  } from "reactstrap";
-
+import {
+  NavItem,
+  Form,
+  FormGroup,
+  Input,
+  NavLink,
+  Nav,
+  Card,
+  CardHeader,
+  CardBody,
+  CardImg,
+  CardText,
+  TabContent,
+  TabPane
+} from "reactstrap";
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-//import Example from "components/Navbars/ProductsNavbar";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 
 const products = [
-  {
-    name: "Fresh Carrots",
-    description: "Fresh Carrots from our local barrie Farm",
-    image:"https://i.ytimg.com/vi/2R_rhpEBoww/maxresdefault.jpg",
-    price: "1.73",
-    quantity: "100",
-    farm: "Barrie",     
-  },
-  {
-      name: "Fresh Lemon",
-      description: "Fresh Lemons from our local Orlando Farm",
-      image:"https://i.ytimg.com/vi/xieSbAmCkHc/hqdefault.jpg",
-      price: "1.73",
-      quantity: "100",
-      farm: "Orlando",     
-    },
     {
       name: "Fresh Carrots",
       description: "Fresh Carrots from our local barrie Farm",
@@ -51,28 +26,31 @@ const products = [
       quantity: "100",
       farm: "Barrie",     
     },
-];
+    {
+        name: "Fresh Lemon",
+        description: "Fresh Lemons from our local Orlando Farm",
+        image:"https://i.ytimg.com/vi/xieSbAmCkHc/hqdefault.jpg",
+        price: "1.73",
+        quantity: "100",
+        farm: "Orlando",     
+      },
+      {
+        name: "{products.image}",
+        description: "",
+        image:"",
+        price: "",
+        quantity: "",
+        farm: "",     
+      },
 
+  ];
+  
 
-
-function AllProducts() {
-  /*DISPLAY ALL PRODUCTS Grid View- add filters (veges. meats, fruits?)? */
+function Example(){
   const [iconTabs, setIconTabs] = React.useState("1");
-    return (
-        <>
-        {/*NAVBAR CTION*/}
-        <ExamplesNavbar />
-        <div className="wrapper"></div>
-        <LandingPageHeader />
-        <div className="section" id="products">
-        <Container>
-          <div className="title">
-          <div className="text-center">
-            <h3>Fresh Farm Products</h3>
-          </div>
-          </div>
-          
-          <Card>
+  return (
+    <>
+      <Card>
         <CardHeader>
           <Nav className="justify-content-center" role="tablist" tabs>
             <NavItem>
@@ -208,58 +186,96 @@ function AllProducts() {
           </TabContent>
         </CardBody>
       </Card>
-
-
-
-
-
-
-          {/* <Row className="justify-content-center">
-        {products.map((products) => (
-          <Card style={{ width: "20rem" }}>           
-            <CardImg
-              alt="..."
-              src= {products.image}
-              top
-            ></CardImg>
-            <CardBody>
-              <CardText>
-              <h1>{products.name}</h1>
-              {products.description}
-              <p className="text-sm">{products.price}</p>
-              <p className="text-sm">{products.quantity}</p>
-              <p className="text-sm">{products.farm}</p>
-              </CardText>
-            </CardBody>
-          </Card>
-         ))}
-         </Row>
-         <Row className="justify-content-center">
-        {products.map((products) => (
-          <Card style={{ width: "20rem" }}>
-          <CardImg alt="..." src={products.image} top></CardImg>
-          <CardBody>
-            <CardTitle tag="h4">{products.name}</CardTitle>
-            <CardText>
-            {products.description}
-            <p className="text-sm">{products.price} | {products.farm}</p>
-            </CardText>
-            <Button
-              color="primary"
-              href="#pablo"
-              onClick={e => e.preventDefault()}
-            >
-              Add to Cart
-            </Button>
-          </CardBody>
-        </Card>
-         ))}
-         </Row> */}
-        </Container>
-      </div>
-        </>
-      );
+    </>
+  );
 }
 
+export default Example;
 
-export default  AllProducts;
+
+// import React from "react";
+// // reactstrap components
+// import {
+//   UncontrolledCollapse,
+//   DropdownToggle,
+//   DropdownMenu,
+//   DropdownItem,
+//   UncontrolledDropdown,
+//   FormGroup,
+//   Form,
+//   Input,
+//   InputGroupAddon,
+//   InputGroupText,
+//   InputGroup,
+//   NavbarBrand,
+//   Navbar,
+//   NavItem,
+//   NavLink,
+//   Nav,
+//   Container
+// } from "reactstrap";
+// // core components
+
+// function Example(){
+//   return (
+//     <>
+//       <Navbar className="bg-dark" expand="lg">
+//         <Container>
+//           <button
+//             className="navbar-toggler"
+//             id="navbarTogglerDemo01"
+//             type="button"
+//           >
+//             <span className="navbar-toggler-bar bar1"></span>
+//             <span className="navbar-toggler-bar bar2"></span>
+//             <span className="navbar-toggler-bar bar3"></span>
+//           </button>
+//           <UncontrolledCollapse navbar toggler="#navbarTogglerDemo01">
+//             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              
+//             </NavbarBrand>
+//             <Nav className="mr-auto mt-2 mt-lg-0" navbar>
+//               <NavItem className="active">
+//                 <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+//                   Fruits <span className="sr-only">(current)</span>
+//                 </NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+//                   Vegetables
+//                 </NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+//                   Meats
+//                 </NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+//                   Farms
+//                 </NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink
+//                 // only SHOW WHEN LOGGED IN STILL NEED TO BUILD THAT
+//                   className="mylist"
+//                   href="#pablo"
+//                   onClick={e => e.preventDefault()}
+//                 >
+//                   My Listing
+//                 </NavLink>
+//               </NavItem>
+//             </Nav>
+//             <Form className="form-inline ml-auto" data-background-color="">
+//               <FormGroup className="has-white">
+//                 <Input placeholder="Search" type="text"></Input>
+//               </FormGroup>
+//             </Form>
+//           </UncontrolledCollapse>
+//         </Container>
+//       </Navbar>
+//     </>
+//   );
+// }
+
+// export default Example;

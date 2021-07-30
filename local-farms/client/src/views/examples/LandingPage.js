@@ -16,7 +16,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import ProductCarousel from "components/Body/ProductCarousel.js";
+import ProductCarousel from "views/index-sections/ProductCarousel.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function LandingPage() {
