@@ -82,6 +82,10 @@ ReactDOM.render(
           path="/login-page"
           render={(props) => <LoginPage {...props} />}
         />
+        <Route
+          path="/product-page"
+          render={(props) => <ProductPage {...props} />}
+        />
         <Redirect to="/LandingPage" />
         <Redirect from="/" to="/LandingPage" />
       </Switch>
