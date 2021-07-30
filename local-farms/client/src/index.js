@@ -34,7 +34,9 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+import Products from "views/examples/Products.js";
 import ProductPage from "views/examples/ProductPage.js";
+import CheckoutPage from "views/examples/CheckoutPage.js";
 
 ////////////////////////////////////////////////
 
@@ -81,6 +83,10 @@ ReactDOM.render(
         <Route
           path="/product-page"
           render={(props) => <ProductPage {...props} />}
+        />
+        <Route
+          path="/Checkout-page"
+          render={(props) => <CheckoutPage {...props} />}
         />
         <Redirect to="/LandingPage" />
         <Redirect from="/" to="/LandingPage" />
