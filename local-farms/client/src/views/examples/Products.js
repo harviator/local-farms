@@ -155,47 +155,76 @@ function AllProducts() {
             className="text-center"
             activeTab={"iconTabs" + iconTabs}
           >
-              {products.map((products) => (
-            <TabPane tabId="iconTabs1">
-            <Card style={{ width: "20rem" }}>           
-            <CardImg
-              alt="..."
-              src= {products.image}
-              top
-            ></CardImg>
-            <CardBody>
-              <CardText>
-              <h1>{products.name}</h1>
-              {products.description}
-              <p className="text-sm">{products.price}</p>
-              <p className="text-sm">{products.quantity}</p>
-              <p className="text-sm">{products.farm}</p>
             
-              </CardText>
-              </CardBody>
-          </Card>
+              {products.map((products) => (
+            <TabPane tabId="iconTabs1">  
+            <Row className="justify-content-center">    
+             <Card style={{ width: "20rem" }}>
+             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardBody>
+                <CardTitle tag="h4">{products.name}</CardTitle>
+                  <CardText>
+                    {products.description}
+                    <p className="text-sm">{products.price} | {products.farm}</p>
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Add to Cart
+                  </Button>
+             </CardBody>
+             </Card>
+             </Row>
             </TabPane>
             ))}
+            {products.map((products) => (
             <TabPane tabId="iconTabs2">
-            <CardText>
-              <h1>{products.name}</h1>
-              {products.description}
-              <p className="text-sm">{products.price}</p>
-              <p className="text-sm">{products.quantity}</p>
-              <p className="text-sm">{products.farm}</p>
-              </CardText>
+            <Row className="justify-content-center">    
+             <Card style={{ width: "20rem" }}>
+             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardBody>
+                <CardTitle tag="h4">{products.name}</CardTitle>
+                  <CardText>
+                    {products.description}
+                    <p className="text-sm">{products.price} | {products.farm}</p>
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Add to Cart
+                  </Button>
+             </CardBody>
+             </Card>
+             </Row>
             </TabPane>
+             ))}
+            {products.map((products) => (
             <TabPane tabId="iconTabs3">
-              <p>
-                I think that’s a responsibility that I have, to push
-                possibilities, to show people, this is the level that things
-                could be at. So when you get something that has the name Kanye
-                West on it, it’s supposed to be pushing the furthest
-                possibilities. I will be the leader of a company that ends up
-                being worth billions of dollars, because I got the answers. I
-                understand culture. I am the nucleus.
-              </p>
+            <Row className="justify-content-center">    
+             <Card style={{ width: "20rem" }}>
+             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardBody>
+                <CardTitle tag="h4">{products.name}</CardTitle>
+                  <CardText>
+                    {products.description}
+                    <p className="text-sm">{products.price} | {products.farm}</p>
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Add to Cart
+                  </Button>
+             </CardBody>
+             </Card>
+             </Row>
             </TabPane>
+             ))}
             <TabPane tabId="iconTabs4">
               <p>
                 "I will be the leader of a company that ends up being worth
@@ -205,58 +234,12 @@ function AllProducts() {
                 the level that things could be at."
               </p>
             </TabPane>
-          </TabContent>
+            
+          </TabContent>          
         </CardBody>
       </Card>
-
-
-
-
-
-
-          {/* <Row className="justify-content-center">
-        {products.map((products) => (
-          <Card style={{ width: "20rem" }}>           
-            <CardImg
-              alt="..."
-              src= {products.image}
-              top
-            ></CardImg>
-            <CardBody>
-              <CardText>
-              <h1>{products.name}</h1>
-              {products.description}
-              <p className="text-sm">{products.price}</p>
-              <p className="text-sm">{products.quantity}</p>
-              <p className="text-sm">{products.farm}</p>
-              </CardText>
-            </CardBody>
-          </Card>
-         ))}
-         </Row>
-         <Row className="justify-content-center">
-        {products.map((products) => (
-          <Card style={{ width: "20rem" }}>
-          <CardImg alt="..." src={products.image} top></CardImg>
-          <CardBody>
-            <CardTitle tag="h4">{products.name}</CardTitle>
-            <CardText>
-            {products.description}
-            <p className="text-sm">{products.price} | {products.farm}</p>
-            </CardText>
-            <Button
-              color="primary"
-              href="#pablo"
-              onClick={e => e.preventDefault()}
-            >
-              Add to Cart
-            </Button>
-          </CardBody>
-        </Card>
-         ))}
-         </Row> */}
-        </Container>
-      </div>
+    </Container>
+  </div>
         </>
       );
 }
