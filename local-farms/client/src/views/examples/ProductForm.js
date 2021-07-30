@@ -5,6 +5,7 @@ import {
   FormGroup,
   Input,
   Label,
+  Row,
   Button
 } from "reactstrap";
 // core components
@@ -12,8 +13,9 @@ import {
 function ProductForm(){
   return (
     <>
-      <Form>
-      
+    <div className="section section-submit-product">
+    <Row>
+      <Form className="ml-auto mr-auto" lg="6" md="12">      
         <FormGroup>
           <label htmlFor="inputProduct">Product Name</label>
           <Input
@@ -22,16 +24,7 @@ function ProductForm(){
             type="text"
           ></Input>
         </FormGroup>
-        <FormGroup>
-          <label htmlFor="inputDescription">Product Description</label>
-          <Input
-            id="inputDescription"
-            placeholder="Fresh orange Carrots, hand-picked"
-            type="text"
-            rows="8" //NOT WORKING
-            cols="50" 
-          ></Input>
-        </FormGroup>
+              
         <FormGroup>
             <label htmlFor="inputCategory">Category</label>
             <Input id="inputCategory" type="select">
@@ -58,6 +51,19 @@ function ProductForm(){
             <Input id="inputFarm"  placeholder="Ontario YYZ" type="text"></Input>
           </FormGroup>
         </div>
+
+        <FormGroup className="">
+          <label htmlFor="inputDescription">Product Description</label>
+          <Input
+            id="inputDescription"
+            placeholder="Fresh orange Carrots, hand-picked"
+            type="textarea"
+            rows="4" //NOT WORKING
+            cols="80" 
+            name="name"
+          ></Input>
+        </FormGroup>
+
         <FormGroup>
           <FormGroup check>
             <Label check>
@@ -69,10 +75,14 @@ function ProductForm(){
             </Label>
           </FormGroup>
         </FormGroup>
+
         <Button color="primary" type="submit">
           Submit Product
         </Button>
+
       </Form>
+    </Row>
+      </div>
     </>
   );
 }

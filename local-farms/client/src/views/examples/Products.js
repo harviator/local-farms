@@ -1,3 +1,6 @@
+
+
+
 import React from "react";
 
 // reactstrap components
@@ -23,8 +26,8 @@ import{
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-//import Example from "components/Navbars/ProductsNavbar";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import ProductForm from "views/examples/ProductForm.js"
 
 const products = [
   {
@@ -53,8 +56,6 @@ const products = [
     },
 ];
 
-
-
 function AllProducts() {
   /*DISPLAY ALL PRODUCTS Grid View- add filters (veges. meats, fruits?)? */
   const [iconTabs, setIconTabs] = React.useState("1");
@@ -70,8 +71,7 @@ function AllProducts() {
           <div className="text-center">
             <h3>Fresh Farm Products</h3>
           </div>
-          </div>
-          
+          </div>          
           <Card>
         <CardHeader>
           <Nav className="justify-content-center" role="tablist" tabs>
@@ -130,11 +130,11 @@ function AllProducts() {
             <NavItem>
               <NavLink
               // need to link a Form
-                className={iconTabs === "4" ? "active" : ""}
-                href="#pablo"
+                className={iconTabs === "5" ? "active" : ""}
+                href="/productform"
                 onClick={e => {
                   e.preventDefault();
-                  setIconTabs("4");
+                  setIconTabs("5");
                 }}
               >
                 <i className="now-ui-icons ui-1_simple-add"></i>
@@ -157,7 +157,8 @@ function AllProducts() {
           >
             
               {products.map((products) => (
-            <TabPane tabId="iconTabs1">  
+            <TabPane tabId="iconTabs1"> 
+            <Container>
             <Row className="justify-content-center">    
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
@@ -177,6 +178,7 @@ function AllProducts() {
              </CardBody>
              </Card>
              </Row>
+             </Container> 
             </TabPane>
             ))}
             {products.map((products) => (
@@ -233,6 +235,9 @@ function AllProducts() {
                 that I have, to push possibilities, to show people, this is
                 the level that things could be at."
               </p>
+            </TabPane>
+            <TabPane tabId="iconTabs5" className="text-left">
+            <ProductForm />
             </TabPane>
             
           </TabContent>          
