@@ -65,6 +65,11 @@ function ExamplesNavbar() {
             <i class="fas fa-shopping-cart"></i>
             </NavLink>
           </NavItem>
+          <NavItem>
+            <a href='/' onClick={logout}>
+              Log out
+            </a>
+          </NavItem>
         </>
       )
     } else {
