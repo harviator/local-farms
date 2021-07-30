@@ -25,13 +25,23 @@ const items = [
   },
   {
     src: require("assets/img/farm.jpg").default,
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
+    altText: "Fresh Carrots",
+    name: "Fresh Carrots",
+    description: "Fresh Carrots from our local barrie Farm",
+    price: "1.73",
+    quantity: "100",
+    farm: "Barrie",  
+    cart: "ADD TO CART",
   },
   {
     src: require("assets/img/meat.jpg").default,
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States",
+    altText: "Fresh Carrots",
+    name: "Fresh Carrots",
+    description: "Fresh Carrots from our local barrie Farm",
+    price: "1.73",
+    quantity: "100",
+    farm: "Barrie",  
+    cart: "ADD TO CART",
   },
 ];
 

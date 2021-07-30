@@ -196,7 +196,10 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/"
+
+                 href="/products"
+                href="https://www.instagram.com/"
+
                   target="_blank"
                   id="instagram-tooltip"
                 >
