@@ -52,7 +52,7 @@ function ProfilePage() {
                 <i className="fab fa-twitter"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip515203352">
-                Follow me on Twitter
+                see our story on Twitter
               </UncontrolledTooltip>
               <Button
                 className="btn-round btn-icon"
@@ -63,19 +63,16 @@ function ProfilePage() {
                 <i className="fab fa-instagram"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip340339231">
-                Follow me on Instagram
+                see our story on Instagram
               </UncontrolledTooltip>
             </div>
-            <h3 className="title">About me</h3>
+            <h3 className="title">About us</h3>
             <h5 className="description">
-              An artist of considerable range, Ryan — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure. An artist of considerable range.
+              we are a group od developers trying to make a difference and bring awarness to local farms and the valuble products they produce
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
-                <h4 className="title text-center">My Portfolio</h4>
+                <h4 className="title text-center">our repo</h4>
                 <div className="nav-align-center">
                   <Nav
                     className="nav-pills-info nav-pills-just-icons"
@@ -129,24 +126,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg").default}
+                          src={require("assets/img/farmers1.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg").default}
+                          src={require("assets/img/farmers2.jpg").default}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/farmers3.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/farmers4.jpg").default}
                         ></img>
                       </Col>
                     </Row>
@@ -159,24 +156,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg").default}
+                          src={require("assets/img/farmers6.jpg.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg11.jpg").default}
+                          src={require("assets/img/farmers1.jpg").default}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/farmers3.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/farmers7.jpg").default}
                         ></img>
                       </Col>
                     </Row>
@@ -189,24 +186,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg").default}
+                          src={require("assets/img/farmers4.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/farmers6.jpg").default}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/farmers2.jpg").default}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg").default}
+                          src={require("assets/img/farmers4.jpg").default}
                         ></img>
                       </Col>
                     </Row>
