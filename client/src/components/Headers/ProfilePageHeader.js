@@ -31,16 +31,16 @@ function ProfilePageHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/bg5.jpg").default + ")",
+              "url(" + require("assets/img/farmers2.jpg").default + ")",
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="photo-container">
-            <img alt="..." src={require("assets/img/ryan.jpg").default}></img>
+            <img alt="..." src={require("assets/img/farmers1.jpg").default}></img>
           </div>
-          <h3 className="title">Ryan Scheinder</h3>
-          <p className="category">Photographer</p>
+          <h3 className="title">Local Farm Team</h3>
+          <p className="category"></p>
           <div className="content">
             <div className="social-description">
               <h2>26</h2>

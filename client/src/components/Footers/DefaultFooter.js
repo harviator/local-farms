@@ -15,15 +15,15 @@ function DefaultFooter() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
+                  href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
                   target="_blank"
                 >
-                  Creative Tim
+                  Local Farms
                 </a>
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
+                  href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
                   target="_blank"
                 >
                   About Us
@@ -42,17 +42,17 @@ function DefaultFooter() {
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="https://www.invisionapp.com?ref=nukr-default-footer"
+              href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
               target="_blank"
             >
-              Invision
+              the Mandem
             </a>
             . Coded by{" "}
             <a
               href="https://www.creative-tim.com?ref=nukr-default-footer"
               target="_blank"
             >
-              Creative Tim
+              the same Mandem
             </a>
             .
           </div>
