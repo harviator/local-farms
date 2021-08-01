@@ -1,5 +1,9 @@
 import React from "react";
 
+
+import { useQuery } from '@apollo/client'
+
+
 // reactstrap components
 import {
   Button,
@@ -20,10 +24,21 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Productcard from "views/index-sections/ProductCard.js";
 
+
+import { QUERY_PRODUCTS } from '../../utils/queries'
+
 function ProductPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
+
+  const { loading, data } = useQuery(QUERY_PRODUCTS);
+
+  const products = data?.products || []
+
   React.useEffect(() => {
+    console.log(data)
+    console.log(products)
+
     document.body.classList.add("product-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
@@ -34,13 +49,24 @@ function ProductPage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
+
+
   return (
     <>
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
         <div className="wrapper">
-        <Productcard /><Productcard /><Productcard />
+
+          {loading ? (
+            <div>Loading...</div>
+          ) : (
+            products.map((Product) => {
+              return <Productcard Product={Product} />
+            })
+          )}
+
         </div>
         <DefaultFooter />
       </div>

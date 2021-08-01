@@ -60,7 +60,9 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
+
                         "url(" + require("assets/img/farmers3.jpg").default + ")",
+
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -75,7 +77,9 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
+
                         "url(" + require("assets/img/farmers4.jpg").default + ")",
+
                     }}
                   ></div>
                 </Col>
@@ -84,6 +88,7 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
+
                         "url(" + require("assets/img/farmers6.jpg").default + ")",
                     }}
                   ></div>
@@ -99,13 +104,15 @@ function LandingPage() {
                   </p>
                   <p>
                   Local foods promote a safer food supply. The more steps there are between you and your food’s source the more chances there are for contamination. Food grown in distant locations has the potential for food safety issues at harvesting, washing, shipping and distribution.
+
                   </p>
                 </Col>
               </Row>
             </div>
           </Container>
         </div>
-{/*TEAM SECTION*/}
+
+
         <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
@@ -116,6 +123,7 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
+
                       src={require("assets/img/PROFILEPIC.jpg").default}
                     ></img>
                     <h4 className="title">Devesh Patel</h4>
@@ -125,12 +133,15 @@ function LandingPage() {
                       <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
@@ -138,7 +149,9 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-instagram"></i>
@@ -146,7 +159,9 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-facebook-square"></i>
@@ -158,6 +173,7 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
+
                       src={require("assets/img/harviator2.png").default}
                     ></img>
                     <h4 className="title">Jon Harvey</h4>
@@ -167,12 +183,15 @@ function LandingPage() {
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
@@ -180,7 +199,9 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-linkedin"></i>
@@ -192,23 +213,29 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
+
                       src={require("assets/img/drez.jpg").default}
                     ></img>
                     <h4 className="title">Andres Aponte</h4>
+
                     <p className="category text-info">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
+
                       add some{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-google-plus"></i>
@@ -216,7 +243,9 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-youtube"></i>
@@ -224,6 +253,7 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
+
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -288,10 +318,12 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
                     </Button>
+
                     <Button
                       className="btn-icon btn-round"
                       color="info"
@@ -300,6 +332,7 @@ function LandingPage() {
                     >
                       <i className="fab fa-linkedin"></i>
                     </Button>
+
                   </div>
                 </Col>
               </Row>
@@ -362,7 +395,9 @@ function LandingPage() {
                     block
                     className="btn-round"
                     color="info"
+
                     href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >

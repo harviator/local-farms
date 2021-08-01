@@ -51,9 +51,11 @@ function ExamplesNavbar() {
       return (
         <>
           <NavItem>
+
             <NavLink to="/landing-page"
                 outline
                 tag={Link}>
+
               Profile
             </NavLink>
           </NavItem>
