@@ -60,7 +60,7 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg").default + ")",
+                        "url(" + require("assets/img/farmers3.jpg").default + ")",
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -75,7 +75,7 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg").default + ")",
+                        "url(" + require("assets/img/farmers4.jpg").default + ")",
                     }}
                   ></div>
                 </Col>
@@ -84,50 +84,27 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg").default + ")",
+                        "url(" + require("assets/img/farmers6.jpg").default + ")",
                     }}
                   ></div>
                   <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                    why should you eat local? why should you support the local farmers market you see pop up every summer?
+                    is there any upsides to doing this? Well of course!
                   </h3>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                  Locally grown food is full of flavor. When grown locally, the crops are picked at their peak of ripeness versus being harvested early in order to be shipped and distributed to your local retail store. Many times produce at local markets has been picked within 24 hours of your purchase
                   </p>
                   <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
+                  Local food has more nutrients. Local food has a shorter time between harvest and your table, and it is less likely that the nutrient value has decreased. Food imported from far-away states and countries is often older, has traveled and sits in distribution centers before it gets to your store.
                   </p>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                  Local foods promote a safer food supply. The more steps there are between you and your food’s source the more chances there are for contamination. Food grown in distant locations has the potential for food safety issues at harvesting, washing, shipping and distribution.
                   </p>
                 </Col>
               </Row>
             </div>
           </Container>
         </div>
-{/*PRODUCTS SECTION*/}
-<ProductCarousel />
-      <div className="section section-products"></div>
 {/*TEAM SECTION*/}
         <div className="section section-team text-center">
           <Container>
@@ -139,23 +116,21 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/avatar.jpg").default}
+                      src={require("assets/img/PROFILEPIC.jpg").default}
                     ></img>
-                    <h4 className="title">Romina Hadid</h4>
+                    <h4 className="title">Devesh Patel</h4>
                     <p className="category text-info">Model</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      my guy mad popular with the ladies
+                      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck" onClick={(e) => e.preventDefault()}>
                         links
-                      </a>{" "}
+                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
@@ -163,7 +138,7 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-instagram"></i>
@@ -171,7 +146,7 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-facebook-square"></i>
@@ -183,23 +158,21 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg").default}
+                      src={require("assets/img/harviator2.png").default}
                     ></img>
-                    <h4 className="title">Ryan Tompson</h4>
+                    <h4 className="title">Jon Harvey</h4>
                     <p className="category text-info">Designer</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
-                      add some{" "}
+                      cute old man
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
-                      </a>{" "}
+                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
@@ -207,7 +180,7 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-linkedin"></i>
@@ -219,23 +192,23 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/eva.jpg").default}
+                      src={require("assets/img/drez.jpg").default}
                     ></img>
-                    <h4 className="title">Eva Jenner</h4>
+                    <h4 className="title">Andres Aponte</h4>
                     <p className="category text-info">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
-                      add some{" "}
+                      add some{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
                       <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
-                      </a>{" "}
+                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-google-plus"></i>
@@ -243,7 +216,7 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-youtube"></i>
@@ -251,10 +224,81 @@ function LandingPage() {
                     <Button
                       className="btn-icon btn-round"
                       color="info"
-                      href="#pablo"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
+                    </Button>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/syed.jpg").default}
+                    ></img>
+                    <h4 className="title">syed ashan</h4>
+                    <p className="category text-info">Designer</p>
+                    <p className="description">
+                      You can write here details about one of your team members.
+                      You can give more details about what they do. Feel free to
+                      add some{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        links
+                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+                      for people to be able to follow them outside the site.
+                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </Button>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+                      src={require("assets/img/ryan.jpg").default}
+                    ></img>
+                    <h4 className="title">Patrick 'Playboy' Brodie</h4>
+                    <p className="category text-info">i dont know what he does</p>
+                    <p className="description">
+                      he did nothing to help towards this project. he probably is clueless to what this entire application
+                      is but like, he is too good looking not to put in the project so this is a little section for him{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        links
+                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
+                      for people to be able to follow them outside the site.
+                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-linkedin"></i>
                     </Button>
                   </div>
                 </Col>
@@ -318,7 +362,7 @@ function LandingPage() {
                     block
                     className="btn-round"
                     color="info"
-                    href="#pablo"
+                    href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                     onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
