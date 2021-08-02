@@ -201,8 +201,9 @@ function AllProducts() {
              ))}
             </TabPane>
             
-            {products.map((products) => (
+            
             <TabPane tabId="iconTabs3">  
+            {products.map((products) => (
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -220,8 +221,9 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-            </TabPane>
              ))}
+            </TabPane>
+             
             <TabPane tabId="iconTabs4">
               <p>
                <MyListings/>
