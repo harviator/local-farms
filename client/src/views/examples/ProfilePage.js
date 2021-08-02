@@ -156,7 +156,7 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/farmers6.jpg.jpg").default}
+                          src={require("assets/img/farmers6.jpg").default}
                         ></img>
                         <img
                           alt="..."
