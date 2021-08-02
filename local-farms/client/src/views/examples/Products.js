@@ -1,4 +1,5 @@
 import React from "react";
+//import { products } from "local-farms/server/config/seeds.js";
 
 // reactstrap components
 import{
@@ -27,6 +28,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import ProductForm from "views/examples/ProductForm.js"
 import MyListings from "views/index-sections/MyListings.js"
 
+//Just for DEMO
 const products = [
   {
     name: "Fresh Carrots",
@@ -34,7 +36,8 @@ const products = [
     image:"https://i.ytimg.com/vi/2R_rhpEBoww/maxresdefault.jpg",
     price: "1.73",
     quantity: "100",
-    farm: "Barrie",     
+    farm: "Barrie",   
+    id: "vegetable",  
   },
   {
       name: "Fresh Lemon",
@@ -42,7 +45,8 @@ const products = [
       image:"https://i.ytimg.com/vi/xieSbAmCkHc/hqdefault.jpg",
       price: "1.73",
       quantity: "100",
-      farm: "Orlando",     
+      farm: "Orlando",
+      id: "fruit",     
     },
     {
       name: "Fresh Carrots",
@@ -54,6 +58,35 @@ const products = [
     },
 ];
 
+
+const fruits = [
+  {
+    name: "Fresh Strawberries",
+    description: "Fresh Carrots from our local barrie Farm",
+    image:"https://static.dw.com/image/38549598_303.jpg",
+    price: "1.73",
+    quantity: "100",
+    farm: "Barrie",   
+    id: "fruit",  
+  },
+  {
+      name: "Watermelon",
+      description: "Fresh Lemons from our local Orlando Farm",
+      image:"https://zaszambia.files.wordpress.com/2020/01/79094063.jpg?w=450",
+      price: "1.73",
+      quantity: "100",
+      farm: "Orlando",
+      id: "fruit",     
+    },
+    {
+      name: "Fresh Carrots",
+      description: "Fresh Carrots from our local barrie Farm",
+      image:"https://i.ytimg.com/vi/2R_rhpEBoww/maxresdefault.jpg",
+      price: "1.73",
+      quantity: "100",
+      farm: "Barrie",     
+    },
+];
 function AllProducts() {
   /*DISPLAY ALL PRODUCTS Grid View- add filters (veges. meats, fruits?)? */
   const [iconTabs, setIconTabs] = React.useState("1");
@@ -180,14 +213,14 @@ function AllProducts() {
             
             
             <TabPane tabId="iconTabs2">  
-            {products.map((products) => (
+            {fruits.map((fruits) => (
              <Card style={{ width: "20rem" }}>
-             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardImg alt="..." src={fruits.image} top></CardImg>
              <CardBody>
-                <CardTitle tag="h4">{products.name}</CardTitle>
+                <CardTitle tag="h4">{fruits.name}</CardTitle>
                   <CardText>
-                    {products.description}
-                    <p className="text-sm">{products.price} | {products.farm}</p>
+                    {fruits.description}
+                    <p className="text-sm">{fruits.price} | {fruits.farm}</p>
                   </CardText>
                   <Button
                     color="primary"

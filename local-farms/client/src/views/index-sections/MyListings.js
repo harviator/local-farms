@@ -40,7 +40,7 @@ function MyListings() {
          href="#pablo"
          onClick={e => e.preventDefault()}
        >
-         Add to Cart
+         Delete Listing
        </Button>
   </CardBody>
   </Card>
