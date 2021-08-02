@@ -84,6 +84,10 @@ ReactDOM.render(
           path="/product-page"
           render={(props) => <ProductPage {...props} />}
         />
+         <Route
+          path="/products"
+          render={(props) => <Products {...props} />}
+        />
         <Route
           path="/Checkout-page"
           render={(props) => <CheckoutPage {...props} />}
