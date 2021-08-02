@@ -25,6 +25,7 @@ import{
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import ProductForm from "views/examples/ProductForm.js"
+import MyListings from "views/index-sections/MyListings.js"
 
 const products = [
   {
@@ -154,8 +155,9 @@ function AllProducts() {
             activeTab={"iconTabs" + iconTabs}
           >
             
-              {products.map((products) => (
-            <TabPane tabId="iconTabs1">          
+              
+            <TabPane tabId="iconTabs1">    
+            {products.map((products) => (      
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -173,9 +175,9 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             
+             ))}
             </TabPane>
-            ))}
+            
             {products.map((products) => (
             <TabPane tabId="iconTabs2">  
              <Card style={{ width: "20rem" }}>
@@ -220,11 +222,7 @@ function AllProducts() {
              ))}
             <TabPane tabId="iconTabs4">
               <p>
-                "I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers. I understand
-                culture. I am the nucleus. I think that’s a responsibility
-                that I have, to push possibilities, to show people, this is
-                the level that things could be at."
+               <MyListings/>
               </p>
             </TabPane>
             <TabPane tabId="iconTabs5" className="text-left">
