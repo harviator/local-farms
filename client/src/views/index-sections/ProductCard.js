@@ -1,72 +1,40 @@
 import React from "react";
 import { Container } from "reactstrap";
+import '../../assets/scss/productCard.scss';
 
+function Productcard({ product }) {
+  return (
 
-function Productcard() {
-    return (
-
-<div class="product-wrapper">
-  <div class="product-container">
-    <div class="product-top"></div>
-    <div class="product-bottom">
-      <div class="product-left">
-        <div class="product-details">
-          <h1>Chair</h1>
-          <p>£250</p>
-        </div>
-        <div class="product-buy"><i class="product-material-icons">add_shopping_cart</i></div>
+    <div class="card">
+      <div class="card__title">
+        <h3>Fresh Product</h3>
       </div>
-      <div class="product-right">
-        <div class="product-done"><i class="product-material-icons">done</i></div>
-        <div class="product-details">
-          <h1>Chair</h1>
-          <p>Added to your cart</p>
+      <div class="card__body">
+        <div class="half">
+          <div class="featured_text">
+            <h1>{product.name}</h1>
+            <p class="sub">Quantity: {product.quantity}</p>
+            <p class="price">{product.price}</p>
+          </div>
+          <div class="image">
+            <img src={(`/images/${product.image}`)} alt={`${product.name}`} />
+          </div>
         </div>
-        <div class="product-remove"><i class="product-material-icons">clear</i></div>
+        <div class="half">
+          <div class="description">
+            <p>{product.description}</p>
+          </div>
+          <span class="stock"><i class="fa fa-pen"></i> In stock</span>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="action">
+          <button type="button">Add to cart</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="product-inside">
-    <div class="product-icon"><i class="product-material-icons">info_outline</i></div>
-    <div class="product-contents">
-      <table>
-        <tr>
-          <th>Width</th>
-          <th>Height</th>
-        </tr>
-        <tr>
-          <td>3000mm</td>
-          <td>4000mm</td>
-        </tr>
-        <tr>
-          <th>Something</th>
-          <th>Something</th>
-        </tr>
-        <tr>
-          <td>200mm</td>
-          <td>200mm</td>
-        </tr>
-        <tr>
-          <th>Something</th>
-          <th>Something</th>
-        </tr>
-        <tr>
-          <td>200mm</td>
-          <td>200mm</td>
-        </tr>
-        <tr>
-          <th>Something</th>
-          <th>Something</th>
-        </tr>
-        <tr>
-          <td>200mm</td>
-          <td>200mm</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</div>
-    );
+
+  );
 }
 
 export default Productcard;

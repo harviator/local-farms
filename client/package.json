@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.4.1",
+    "@stripe/stripe-js": "^1.16.0",
     "graphql": "^15.5.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
