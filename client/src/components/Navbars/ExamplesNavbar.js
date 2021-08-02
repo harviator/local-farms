@@ -51,11 +51,7 @@ function ExamplesNavbar() {
       return (
         <>
           <NavItem>
-
-            <NavLink to="/landing-page"
-                outline
-                tag={Link}>
-
+            <NavLink to="/profile" tag={Link}>
               Profile
             </NavLink>
           </NavItem>
@@ -68,11 +64,6 @@ function ExamplesNavbar() {
             <NavLink to="/checkout-page" tag={Link}>
             <i class="fas fa-shopping-cart"></i>
             </NavLink>
-          </NavItem>
-          <NavItem>
-            <a href='/' onClick={logout}>
-              Log out
-            </a>
           </NavItem>
         </>
       )
@@ -124,13 +115,13 @@ function ExamplesNavbar() {
               <DropdownItem header tag="a">
                 Main Menu
               </DropdownItem>
-              <DropdownItem href="#products" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="/products">
                 Shop
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Farms
+              <DropdownItem href="/product-page">
+                Farms - JON Page
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="/profile-page" >
                 Our Team
               </DropdownItem>
               {/* <DropdownItem divider></DropdownItem> */}
@@ -207,7 +198,6 @@ function ExamplesNavbar() {
                 <NavLink
 
                  href="/products"
-                href="https://www.instagram.com/"
 
                   target="_blank"
                   id="instagram-tooltip"
