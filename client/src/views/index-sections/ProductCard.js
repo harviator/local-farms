@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "reactstrap";
-import ProductItem from "reference/ProductItem";
 import '../../assets/scss/productCard.scss';
 
 function Productcard({ product }) {
