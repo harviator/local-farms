@@ -1,167 +1,219 @@
- .product-wrapper{
-    width: 300px;
-    height: 500px;
-    background: white;
-    margin: 0;
-    position: inherit;
-    overflow: hidden;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0;
-    transform: scale(0.95);
-    transition: box-shadow 0.5s, transform 0.5s;
-    flex-wrap: unset;
-    float: inline-start;
-    &:hover{
-      transform: scale(1);
-      box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Montserrat:300,400,700,800|Open+Sans:300');
+
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    #b91eda,
+    #a02ae0,
+    #8234e5,
+    #5d3be8,
+    #1241eb
+  );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main{
+  max-width: 720px;
+  margin: 5% auto;
+}
+
+.card{
+  box-shadow: 0 6px 6px rgba(#000, 0.3);
+  transition: 200ms;
+  background: #fff;
+  
+  .card__title{
+    display: flex;
+    align-items: center;
+    padding: 30px 40px;
+    
+    h3{
+      flex: 0 1 200px;
+      text-align: right;
+      margin: 0;
+      color: #252525;
+      font-family: sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
     }
     
-    .product-container{
-      width:100%;
-      height:100%;
-      .product-top{
-        height: 80%;
-        width:100%;
-        background: url(https://s-media-cache-ak0.pinimg.com/736x/49/80/6f/49806f3f1c7483093855ebca1b8ae2c4.jpg) no-repeat center center; 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
+    .icon{
+      flex: 1 0 10px;
+      background: #115dd8;
+      color: #fff;
+      padding: 10px 10px;
+      transition: 200ms;
+      
+      > a{
+        color: #fff;
       }
-      .product-bottom{
-        width: 200%;
-        height: 20%;
-        transition: transform 0.5s;
-        &.clicked{
-          transform: translateX(-50%);
-        }
-        .product-left{
-          height:100%;
-          width: 50%;
-          background: #f4f4f4;
-          position:relative;
-          float:left;
-          .product-details{
-            padding: 20px;
-            float: left;
-            width: calc(70% - 40px);
-          }
-          .product-buy{
-            float:right;
-            width: calc(30% - 2px);
-            height:100%;
-            background: #f1f1f1;
-            transition: background 0.5s;
-            border-left:solid thin rgba(0,0,0,0.1);
-            i{
-              font-size:30px;
-              padding:30px;
-              color: #254053;
-              transition: transform 0.5s;
-            }
-            &:hover{
-              background: #A6CDDE;
-            }
-            &:hover i{
-              transform: translateY(5px);
-              color:#00394B;
-            }
-          }
-        }
-        .product-right{
-          width: 50%;
-          background: #A6CDDE;
-          color: white;
-          float:right;
-          height:200%;
-          overflow: hidden;
-          .product-details{
-            padding: 20px;
-            float: right;
-            width: calc(70% - 40px);
-          }
-          .product-done{
-            width: calc(30% - 2px);
-            float:left;
-            transition: transform 0.5s;
-            border-right:solid thin rgba(255,255,255,0.3);
-            height:50%;
-            i{
-              font-size:30px;
-              padding:30px;
-              color: white;
-            }
-          }
-          .product-remove{
-            width: calc(30% - 1px);
-            clear: both;
-            border-right:solid thin rgba(255,255,255,0.3);
-            height:50%;
-            background: #BC3B59;
-            transition: transform 0.5s, background 0.5s;
-            &:hover{
-              background: #9B2847;
-            }
-            &:hover i{
-              transform: translateY(5px);
-            }
-            i{
-              transition: transform 0.5s;
-              font-size:30px;
-              padding:30px;
-              color: white;
-            }
-          }
-          &:hover{
-            .product-remove, .product-done{
-              transform: translateY(-100%);
-            }
-          }
-        }
-      }
-    }
-    
-    .product-inside{
-      z-index:9;
-      background: #92879B;
-      width:140px;
-      height:140px;
-      position: absolute;
-      top: -70px;
-      right: -70px;
-      border-radius: 0px 0px 200px 200px;
-      transition: all 0.5s, border-radius 2s, top 1s;
-      overflow: hidden;
-      .product-icon{
-        position:absolute;
-        right:85px;
-        top:85px;
-        color:white;
-        opacity: 1;
-      }
+      
       &:hover{
-        width:100%;
-        right:0;
-        top:0;
-        border-radius: 0;
-        height:80%;
-        .product-icon{
-          opacity: 0;
-          right:15px;
-          top:15px;
-        }
-        .product-contents{
-          opacity: 1;
-          transform: scale(1);
-          transform: translateY(0);
-        }
-      }
-      .product-contents{
-        padding: 5%;
-        opacity: 0;
-        transform: scale(0.5);
-        transform: translateY(-200%);
-        transition: opacity 0.2s, transform 0.8s;
+        background: #252525;
       }
     }
   }
+  
+  .card__body{
+    padding: 0 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    margin-bottom: 25px;
+    
+    > .half{
+      box-sizing: border-box;
+      padding: 0 15px;
+      flex: 1 0 50%;
+    }
+    
+    .featured_text{
+      h1{
+        margin: 0;
+        padding: 0;
+        font-weight: 800;
+        font-family: "Montserrat", sans-serif;
+        font-size: 64px;
+        line-height: 50px;
+        color: #181e28;
+      }
+      
+      p{
+        margin: 0;
+        padding: 0;
+        
+        &.sub{
+          font-family: "Montserrat", sans-serif;
+          font-size: 26px;
+          text-transform: uppercase;
+          color: #686e77;
+          font-weight: 300;
+          margin-bottom: 5px;
+        }
+        
+        &.price{
+          font-family: "Fjalla One", sans-serif;
+          color: #252525;
+          font-size: 26px;
+        }
+      }
+    }
+    
+    .image{
+      padding-top: 15px;
+      width: 100%;
+      
+      img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    
+    .description{
+      margin-bottom: 25px;
+      
+      p{
+        margin: 0;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        line-height: 27px;
+        font-size: 16px;
+        color: #555;
+      }
+    }
+    
+    span.stock{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: #a1cc16;
+    }
+    
+    .reviews{
+      .stars{
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        
+        > li{
+          display: inline-block;
+          
+          .fa{
+            color: #f7c01b;
+          }
+        }
+      }
+      
+      > span{
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin-left: 5px;
+        color: #555;
+      }
+    }
+  }
+  
+  .card__footer{
+    padding: 30px 40px;
+    display: flex;
+    flex-flow: row no-wrap;
+    align-items: center;
+    position: relative;
+    
+    &::before{
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 40px;
+      width: calc(100% - 40px);
+      height: 3px;
+      background: #115dd8;
+      background: linear-gradient(to right, #115dd8 0%,#115dd8 20%,#ddd 20%,#ddd 100%);
+    }
+    
+    .recommend{
+      flex: 1 0 10px;
+      
+      p{
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #555;
+      }
+     
+      h3{
+        margin: 0;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #115dd8;
+      }
+    }
+    
+    .action{
+      button{
+        cursor: pointer;
+        border: 1px solid #115dd8;
+        padding: 14px 30px;
+        border-radius: 200px;
+        color: #fff;
+        background: #115dd8;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        transition: 200ms;
+        
+        &:hover{
+          background: #fff;
+          color: #115dd8;
+        }
+      }
+    }
+  }
+}
