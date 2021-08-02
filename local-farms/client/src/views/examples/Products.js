@@ -1,6 +1,3 @@
-
-
-
 import React from "react";
 
 // reactstrap components
@@ -151,15 +148,14 @@ function AllProducts() {
           </Nav>
         </CardHeader>
         <CardBody>
+        <Row className="justify-content-center">    
           <TabContent
             className="text-center"
             activeTab={"iconTabs" + iconTabs}
           >
             
               {products.map((products) => (
-            <TabPane tabId="iconTabs1"> 
-            <Container>
-            <Row className="justify-content-center">    
+            <TabPane tabId="iconTabs1">          
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -177,13 +173,11 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             </Row>
-             </Container> 
+             
             </TabPane>
             ))}
             {products.map((products) => (
-            <TabPane tabId="iconTabs2">
-            <Row className="justify-content-center">    
+            <TabPane tabId="iconTabs2">  
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -201,12 +195,10 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             </Row>
             </TabPane>
              ))}
             {products.map((products) => (
-            <TabPane tabId="iconTabs3">
-            <Row className="justify-content-center">    
+            <TabPane tabId="iconTabs3">  
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -224,7 +216,6 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             </Row>
             </TabPane>
              ))}
             <TabPane tabId="iconTabs4">
@@ -238,9 +229,9 @@ function AllProducts() {
             </TabPane>
             <TabPane tabId="iconTabs5" className="text-left">
             <ProductForm />
-            </TabPane>
-            
-          </TabContent>          
+            </TabPane>            
+          </TabContent>
+          </Row>          
         </CardBody>
       </Card>
     </Container>
