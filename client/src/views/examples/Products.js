@@ -1,7 +1,5 @@
-
-
-
 import React from "react";
+//import { products } from "local-farms/server/config/seeds.js";
 
 // reactstrap components
 import{
@@ -28,7 +26,9 @@ import{
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import ProductForm from "views/examples/ProductForm.js"
+import MyListings from "views/index-sections/MyListings.js"
 
+//Just for DEMO
 const products = [
   {
     name: "Fresh Carrots",
@@ -36,7 +36,8 @@ const products = [
     image:"https://i.ytimg.com/vi/2R_rhpEBoww/maxresdefault.jpg",
     price: "1.73",
     quantity: "100",
-    farm: "Barrie",     
+    farm: "Barrie",   
+    id: "vegetable",  
   },
   {
       name: "Fresh Lemon",
@@ -44,7 +45,8 @@ const products = [
       image:"https://i.ytimg.com/vi/xieSbAmCkHc/hqdefault.jpg",
       price: "1.73",
       quantity: "100",
-      farm: "Orlando",     
+      farm: "Orlando",
+      id: "fruit",     
     },
     {
       name: "Fresh Carrots",
@@ -56,7 +58,50 @@ const products = [
     },
 ];
 
+
+const fruits = [
+  {
+    name: "Fresh Strawberries",
+    description: "Fresh Carrots from our local barrie Farm",
+    image:"https://static.dw.com/image/38549598_303.jpg",
+    price: "1.73",
+    quantity: "100",
+    farm: "Barrie",   
+    id: "fruit",  
+  },
+  {
+      name: "Watermelon",
+      description: "Fresh Lemons from our local Orlando Farm",
+      image:"https://zaszambia.files.wordpress.com/2020/01/79094063.jpg?w=450",
+      price: "1.73",
+      quantity: "100",
+      farm: "Orlando",
+      id: "fruit",     
+    },
+    {
+      name: "Fresh Carrots",
+      description: "Fresh Carrots from our local barrie Farm",
+      image:"https://i.ytimg.com/vi/2R_rhpEBoww/maxresdefault.jpg",
+      price: "1.73",
+      quantity: "100",
+      farm: "Barrie",     
+    },
+];
 function AllProducts() {
+  //run seed properly - Done
+  //check data of the seed robo3t - Done
+  //use apollo graphql playground to test the query - Coordinate with Jon
+  //after succesfully testing the query use it here
+  //remember to comment the products demo on the top
+
+
+
+  // const{loading, data}=useQuery(QUERY_PRODUCTS,{
+  //   variables:{farm:farmId}
+  // })
+
+  //const products=data?.products||{}
+
   /*DISPLAY ALL PRODUCTS Grid View- add filters (veges. meats, fruits?)? */
   const [iconTabs, setIconTabs] = React.useState("1");
     return (
@@ -151,22 +196,22 @@ function AllProducts() {
           </Nav>
         </CardHeader>
         <CardBody>
+        <Row className="justify-content-center">    
           <TabContent
             className="text-center"
             activeTab={"iconTabs" + iconTabs}
           >
             
-              {products.map((products) => (
-            <TabPane tabId="iconTabs1"> 
-            <Container>
-            <Row className="justify-content-center">    
+              
+            <TabPane tabId="iconTabs1">    
+            {products.map((product) => (      
              <Card style={{ width: "20rem" }}>
-             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardImg alt="..." src={product.image} top></CardImg>
              <CardBody>
-                <CardTitle tag="h4">{products.name}</CardTitle>
+                <CardTitle tag="h4">{product.name}</CardTitle>
                   <CardText>
-                    {products.description}
-                    <p className="text-sm">{products.price} | {products.farm}</p>
+                    {product.description}
+                    <p className="text-sm">{product.price} | {product.farm}</p>
                   </CardText>
                   <Button
                     color="primary"
@@ -177,36 +222,35 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             </Row>
-             </Container> 
-            </TabPane>
-            ))}
-            {products.map((products) => (
-            <TabPane tabId="iconTabs2">
-            <Row className="justify-content-center">    
-             <Card style={{ width: "20rem" }}>
-             <CardImg alt="..." src={products.image} top></CardImg>
-             <CardBody>
-                <CardTitle tag="h4">{products.name}</CardTitle>
-                  <CardText>
-                    {products.description}
-                    <p className="text-sm">{products.price} | {products.farm}</p>
-                  </CardText>
-                  <Button
-                    color="primary"
-                    href="#pablo"
-                    onClick={e => e.preventDefault()}
-                  >
-                    Add to Cart
-                  </Button>
-             </CardBody>
-             </Card>
-             </Row>
-            </TabPane>
              ))}
+            </TabPane>
+            
+            
+            <TabPane tabId="iconTabs2">  
+            {fruits.map((fruits) => (
+             <Card style={{ width: "20rem" }}>
+             <CardImg alt="..." src={fruits.image} top></CardImg>
+             <CardBody>
+                <CardTitle tag="h4">{fruits.name}</CardTitle>
+                  <CardText>
+                    {fruits.description}
+                    <p className="text-sm">{fruits.price} | {fruits.farm}</p>
+                  </CardText>
+                  <Button
+                    color="primary"
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Add to Cart
+                  </Button>
+             </CardBody>
+             </Card> 
+             ))}
+            </TabPane>
+            
+            
+            <TabPane tabId="iconTabs3">  
             {products.map((products) => (
-            <TabPane tabId="iconTabs3">
-            <Row className="justify-content-center">    
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -224,23 +268,19 @@ function AllProducts() {
                   </Button>
              </CardBody>
              </Card>
-             </Row>
-            </TabPane>
              ))}
+            </TabPane>
+             
             <TabPane tabId="iconTabs4">
               <p>
-                "I will be the leader of a company that ends up being worth
-                billions of dollars, because I got the answers. I understand
-                culture. I am the nucleus. I think that’s a responsibility
-                that I have, to push possibilities, to show people, this is
-                the level that things could be at."
+               <MyListings/>
               </p>
             </TabPane>
             <TabPane tabId="iconTabs5" className="text-left">
             <ProductForm />
-            </TabPane>
-            
-          </TabContent>          
+            </TabPane>            
+          </TabContent>
+          </Row>          
         </CardBody>
       </Card>
     </Container>
