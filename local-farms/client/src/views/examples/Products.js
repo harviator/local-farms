@@ -88,6 +88,20 @@ const fruits = [
     },
 ];
 function AllProducts() {
+  //run seed properly - Done
+  //check data of the seed robo3t - Done
+  //use apollo graphql playground to test the query - Coordinate with Jon
+  //after succesfully testing the query use it here
+  //remember to comment the products demo on the top
+
+
+
+  // const{loading, data}=useQuery(QUERY_PRODUCTS,{
+  //   variables:{farm:farmId}
+  // })
+
+  //const products=data?.products||{}
+
   /*DISPLAY ALL PRODUCTS Grid View- add filters (veges. meats, fruits?)? */
   const [iconTabs, setIconTabs] = React.useState("1");
     return (
@@ -190,14 +204,14 @@ function AllProducts() {
             
               
             <TabPane tabId="iconTabs1">    
-            {products.map((products) => (      
+            {products.map((product) => (      
              <Card style={{ width: "20rem" }}>
-             <CardImg alt="..." src={products.image} top></CardImg>
+             <CardImg alt="..." src={product.image} top></CardImg>
              <CardBody>
-                <CardTitle tag="h4">{products.name}</CardTitle>
+                <CardTitle tag="h4">{product.name}</CardTitle>
                   <CardText>
-                    {products.description}
-                    <p className="text-sm">{products.price} | {products.farm}</p>
+                    {product.description}
+                    <p className="text-sm">{product.price} | {product.farm}</p>
                   </CardText>
                   <Button
                     color="primary"
