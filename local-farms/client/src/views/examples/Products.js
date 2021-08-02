@@ -178,8 +178,9 @@ function AllProducts() {
              ))}
             </TabPane>
             
-            {products.map((products) => (
+            
             <TabPane tabId="iconTabs2">  
+            {products.map((products) => (
              <Card style={{ width: "20rem" }}>
              <CardImg alt="..." src={products.image} top></CardImg>
              <CardBody>
@@ -196,9 +197,10 @@ function AllProducts() {
                     Add to Cart
                   </Button>
              </CardBody>
-             </Card>
-            </TabPane>
+             </Card> 
              ))}
+            </TabPane>
+            
             {products.map((products) => (
             <TabPane tabId="iconTabs3">  
              <Card style={{ width: "20rem" }}>
