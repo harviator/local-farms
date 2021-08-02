@@ -55,8 +55,8 @@ function ProductPage() {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            products.map((Product) => {
-              return <Productcard Product={Product} />
+            products.map((product) => {
+              return <Productcard product={product} />
             })
           )}
         </div>
