@@ -128,7 +128,7 @@ function ExamplesNavbar() {
                 Our Team
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
+              <DropdownItem href="/LandingPage#contact">
                 Contact us
               </DropdownItem>
             </DropdownMenu>
