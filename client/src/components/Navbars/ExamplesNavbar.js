@@ -119,13 +119,13 @@ function ExamplesNavbar() {
               <DropdownItem href="/product-page">
                 Shop
               </DropdownItem>
-              <HashLink style={{ color: '#000000' }} to="/LandingPage#team"
+              <HashLink style={{ color: '#000000', fontSize:13, marginLeft: 22 }} to="/LandingPage#team"
                 tag={Link}
                 >
                 Our Team
               </HashLink>
               <DropdownItem divider></DropdownItem>
-              <HashLink style={{ color: '#000000' }} to="/LandingPage#contact"
+              <HashLink style={{ color: '#000000', fontSize:13, marginLeft: 22 }} to="/LandingPage#contact"
                 tag={Link}
                 >
                 Contact us
