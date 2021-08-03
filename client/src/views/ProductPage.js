@@ -33,7 +33,7 @@ function ProductPage() {
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
-  const products = data?.products || []
+  const products = data?.products || [] 
 
   React.useEffect(() => {
     console.log(data)
