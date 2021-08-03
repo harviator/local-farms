@@ -22,7 +22,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
-import Productcard from "views/index-sections/ProductCard.js";
+import Productcard from "../components/Body/ProductCard";
 
 
 import { QUERY_PRODUCTS } from '../../utils/queries'
