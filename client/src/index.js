@@ -22,6 +22,7 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 // graphql
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from "@apollo/client";
 import { setContext } from '@apollo/client/link/context'
+import { StoreProvider } from "utils/GlobalState";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -64,8 +65,8 @@ const client = new ApolloClient({
 ReactDOM.render(
   <ApolloProvider client = {client}>
   <BrowserRouter>
+  <StoreProvider>
     <Switch>
-      <Switch>
         <Route path="/LandingPage" render={(props) => <LandingPage {...props} />} />
           {/* <Route
             path="/nucleo-icons"
@@ -89,7 +90,7 @@ ReactDOM.render(
         />
         <Route
           path="/product-page"
-          render={(props) => <ProductPage {...props} />}
+          component={ProductPage}
         />
         <Route
           path="/Checkout-page"
@@ -97,8 +98,8 @@ ReactDOM.render(
         />
         <Redirect to="/LandingPage" />
         <Redirect from="/" to="/LandingPage" />
-      </Switch>
     </Switch>
+    </StoreProvider>
   </BrowserRouter>
   </ApolloProvider>,
   document.getElementById("root")
