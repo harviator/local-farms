@@ -37,6 +37,7 @@ import ProfilePage from "views/examples/ProfilePage.js";
 import Products from "views/examples/Products.js";
 import ProductPage from "views/examples/ProductPage.js";
 import CheckoutPage from "views/examples/CheckoutPage.js";
+import SimpleLogin from "views/examples/SimpleLogin.js";
 
 ////////////////////////////////////////////////
 

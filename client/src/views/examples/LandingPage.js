@@ -115,7 +115,7 @@ function LandingPage() {
 
         <div className="section section-team text-center">
           <Container>
-            <h2 className="title">Here is our team</h2>
+            <h2 className="title" id="team">Here is our team</h2>
             <div className="team">
               <Row>
                 <Col md="4">
