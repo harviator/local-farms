@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+//import SignupForm from "../reference/Signup/SignUpForm.js";
+
 // reactstrap components
 import {
   Button,
@@ -20,16 +22,16 @@ import {
 // core components
 
 function SignUp() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
+  const [firstFocus, setFirstFocus] = React.useState({ name: ''});
+  const [emailFocus, setEmailFocus] = React.useState({ email: '' });
+  const [passwordFocus, setpasswordFocus] = React.useState({ password: '' });
   return (
     <>
       <div
         className="section section-signup"
         style={{
           backgroundImage:
-            "url(" + require("assets/img/bg11.jpg").default + ")",
+            "url(" + require("assets/img/fruits.jpg").default + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
           minHeight: "700px",
@@ -91,23 +93,6 @@ function SignUp() {
                   </InputGroup>
                   <InputGroup
                     className={
-                      "no-border" + (lastFocus ? " input-group-focus" : "")
-                    }
-                  >
-                    <InputGroupAddon addonType="prepend">
-                      <InputGroupText>
-                        <i className="now-ui-icons text_caps-small"></i>
-                      </InputGroupText>
-                    </InputGroupAddon>
-                    <Input
-                      placeholder="Last Name..."
-                      type="text"
-                      onFocus={() => setLastFocus(true)}
-                      onBlur={() => setLastFocus(false)}
-                    ></Input>
-                  </InputGroup>
-                  <InputGroup
-                    className={
                       "no-border" + (emailFocus ? " input-group-focus" : "")
                     }
                   >
@@ -123,14 +108,34 @@ function SignUp() {
                       onBlur={() => setEmailFocus(false)}
                     ></Input>
                   </InputGroup>
+                  <InputGroup
+                    className={
+                      "no-border" + (passwordFocus ? " input-group-focus" : "")
+                    }
+                  >
+                    <InputGroupAddon addonType="prepend">
+                      <InputGroupText>
+                        <i className="now-ui-icons text_caps-small"></i>
+                      </InputGroupText>
+                    </InputGroupAddon>
+                    <Input
+                      placeholder="Password..."
+                      type="text"
+                      onFocus={() => setpasswordFocus(true)}
+                      onBlur={() => setpasswordFocus(false)}
+                    ></Input>
+                  </InputGroup>                  
                 </CardBody>
                 <CardFooter className="text-center">
-                  <Button
+                  <Button 
                     className="btn-neutral btn-round"
+                    //disabled={!(firstFocus.name && emailFocus.email && passwordFocus.password)}
                     color="info"
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
+                    href="/"
                     size="lg"
+                    type='submit'
+                    variant='success'
+                   
                   >
                     Get Started
                   </Button>
