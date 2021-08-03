@@ -34,7 +34,7 @@ function LandingPageHeader() {
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">This is our great company.</h1>
+            <h1 className="title">Local Farms</h1>
           </Container>
         </div>
       </div>

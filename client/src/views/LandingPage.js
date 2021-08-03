@@ -44,11 +44,9 @@ function LandingPage() {
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Who we are?</h2>
                 <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
+                a group of devs trying to push a change to the farmering industry. 
+                Our goal is to draw people attention to local farming to support local farmers and their crops.
+                Have people eat healthier and take care of their bodies and overall make better choices with the foods they eat.
                 </h5>
               </Col>
             </Row>
@@ -66,11 +64,9 @@ function LandingPage() {
                     }}
                   >
                     <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
+                    "The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways." <br></br>
                       <br></br>
-                      <small>-NOAA</small>
+                      <small>-John F. Kennedy</small>
                     </p>
                   </div>
                   <div
