@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
-//import '../../assets/css/hashlink.css'
+
 
 // reactstrap components
 import {
@@ -127,9 +127,11 @@ function ExamplesNavbar() {
               <DropdownItem href="/product-page">
                 Shop
               </DropdownItem>
-              <DropdownItem to="/LandingPage#team" tag={Link}>
+              <HashLink style={{ color: '#000000' }} to="/LandingPage#team"
+                tag={Link}
+                >
                 Our Team
-              </DropdownItem>
+              </HashLink>
               <DropdownItem divider></DropdownItem>
               <HashLink style={{ color: '#000000' }} to="/LandingPage#contact"
                 tag={Link}
