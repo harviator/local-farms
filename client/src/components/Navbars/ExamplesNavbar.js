@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 // reactstrap components
 import {
   Collapse,
@@ -124,13 +126,15 @@ function ExamplesNavbar() {
               <DropdownItem href="/product-page">
                 Shop
               </DropdownItem>
-              <DropdownItem href="/LandingPage#team">
+              <DropdownItem to="/LandingPage#team" tag={Link}>
                 Our Team
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
-              <DropdownItem href="/LandingPage#contact">
+              <HashLink to="/LandingPage#contact"
+                tag={Link}
+                >
                 Contact us
-              </DropdownItem>
+              </HashLink>
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
