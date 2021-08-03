@@ -1,7 +1,7 @@
 {
   "name": "now-ui-kit-react",
   "version": "1.5.0",
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.4.1",
@@ -19,6 +19,7 @@
     "react-dom": "17.0.2",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "^4.0.3",
     "reactstrap": "8.9.0",
     "sass": "^1.36.0"

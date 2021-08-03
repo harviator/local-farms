@@ -88,7 +88,7 @@ function ExamplesNavbar() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="signup">
+            <NavLink href="/signup-page">
               Sign up
             </NavLink>
           </NavItem>

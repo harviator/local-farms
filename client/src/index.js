@@ -38,6 +38,8 @@ import Products from "views/Products.js";
 import ProductPage from "views/ProductPage.js";
 import CheckoutPage from "views/CheckoutPage.js";
 import SimpleLogin from "views/SimpleLogin.js";
+import SignupPage from "components/Body/SignUp.js";
+
 
 ////////////////////////////////////////////////
 
@@ -80,6 +82,10 @@ ReactDOM.render(
         <Route
           path="/login-page"
           render={(props) => <LoginPage {...props} />}
+        />
+        <Route
+          path="/signup-page"
+          render={(props) => <SignupPage {...props} />}
         />
         <Route
           path="/product-page"
