@@ -121,22 +121,12 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              {/* <DropdownItem header tag="a">
-                Main Menu
-              </DropdownItem> Note: Got rid of "Main Menu" link to no where */}
               <DropdownItem href="/product-page">
                 Shop
               </DropdownItem>
-              {/* <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Farms
-              </DropdownItem> Note: Not being used */}
               <DropdownItem href="/LandingPage#team">
                 Our Team
               </DropdownItem>
-              {/* <DropdownItem divider></DropdownItem> */}
-              {/* <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Our Story
-              </DropdownItem> */}
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
                 Contact us
