@@ -53,20 +53,7 @@ function ExamplesNavbar() {
     if (Auth.loggedIn()) {
       return (
         <>
-          <NavItem>
-
-            <NavLink to="/landing-page"
-                outline
-                tag={Link}>
-
-              Profile
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/checkout-page" tag={Link}>
-            <i class="fas fa-shopping-cart"></i>
-            </NavLink>
-          </NavItem>
+          
           <NavItem>
             <NavLink to="/checkout-page" tag={Link}>
             <i class="fas fa-shopping-cart"></i>
