@@ -1,8 +1,19 @@
 import React from "react";
+import { Redirect } from "react-router";
 import { Container } from "reactstrap";
 import '../../assets/scss/productCard.scss';
+import Auth from "../../utils/auth"
 
 function Productcard({ product }) {
+
+  function addToCartHandler() {
+    if (Auth.loggedIn()) {
+      console.log('Adding to cart'); // cart functionality
+    } else {
+      window.location.replace('/login-page')
+    }
+  }
+
   return (
 
     <div class="card">
@@ -29,7 +40,7 @@ function Productcard({ product }) {
       </div>
       <div class="card__footer">
         <div class="action">
-          <button type="button">Add to cart</button>
+          <button type="button" onClick={addToCartHandler}>Add to cart</button>
         </div>
       </div>
     </div>
