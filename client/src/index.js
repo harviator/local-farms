@@ -39,7 +39,7 @@ import Products from "views/Products.js";
 import ProductPage from "views/ProductPage.js";
 import CheckoutPage from "views/CheckoutPage.js";
 import SimpleLogin from "views/SimpleLogin.js";
-import SignupPage from "components/Body/SignUp.js";
+import SignupPage from "views/signupPage.js";
 
 
 ////////////////////////////////////////////////

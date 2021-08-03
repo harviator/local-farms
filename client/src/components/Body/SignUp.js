@@ -34,7 +34,7 @@ function SignUp() {
             "url(" + require("assets/img/fruits.jpg").default + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
-          minHeight: "700px",
+          minHeight: "1000px",
         }}
       >
         <Container>
@@ -115,7 +115,7 @@ function SignUp() {
                   >
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="now-ui-icons text_caps-small"></i>
+                        <i className="now-ui-icons objects_key-25"></i>
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
@@ -144,16 +144,6 @@ function SignUp() {
             </Card>
           </Row>
           <div className="col text-center">
-            <Button
-              className="btn-round btn-white"
-              color="default"
-              to="/login-page"
-              outline
-              size="lg"
-              tag={Link}
-            >
-              View Login Page
-            </Button>
           </div>
         </Container>
       </div>
