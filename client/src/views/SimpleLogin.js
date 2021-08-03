@@ -29,7 +29,7 @@ function SimpleLogin(props) {
                     className="page-header-image"
                     style={{
                         backgroundImage:
-                            "url(" + require("assets/img/login.jpg").default + ")",
+                            "url(" + require("../assets/img/farmers1.jpg").default + ")",
                     }}
                 ></div>
                 <div className="content">

@@ -16,7 +16,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import ProductCarousel from "views/index-sections/ProductCarousel.js";
+// import ProductCarousel from "views/index-sections/ProductCarousel.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function LandingPage() {
@@ -302,7 +302,7 @@ function LandingPage() {
                     <img
                       alt="..."
                       className="rounded-circle img-fluid img-raised"
-                      src={require("assets/img/ryan.jpg").default}
+                      src={require("../assets/img/playboi.png").default}
                     ></img>
                     <h4 className="title">Patrick 'Playboy' Brodie</h4>
                     <p className="category text-info">i dont know what he does</p>

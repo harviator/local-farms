@@ -18,7 +18,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DefaultFooter from "components/Footers/DefaultFooter.js";
-import Cart from "views/index-sections/Cart.js";
+import Cart from "../components/Body/Cart.js";
 
 function CheckoutPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);

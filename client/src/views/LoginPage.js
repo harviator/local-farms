@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import { useMutation } from '@apollo/client';
 
-import { LOGIN } from '../../utils/mutations'
-import Auth from '../../utils/auth';
+import { LOGIN } from '../utils/mutations'
+import Auth from '../utils/auth';
 
 // reactstrap components
 import {
@@ -98,7 +98,7 @@ function LoginPage() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/login.jpg").default + ")",
+              "url(" + require("../assets/img/farmers1.jpg").default + ")",
           }}
         ></div>
         <div className="content">
@@ -110,7 +110,7 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png").default}
+                        src={require("../assets/img/drez.jpg").default}
                       ></img>
                     </div>
                   </CardHeader>
