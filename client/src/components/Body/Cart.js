@@ -55,6 +55,7 @@ const Cart = () => {
             for (let i = 0; i < item.purchaseQuantity; i++) {
                 productIds.push(item._id);
             }
+            console.log(productIds);
         });
 
         getCheckout({
@@ -87,7 +88,7 @@ const Cart = () => {
             )
         })}
         <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><input type="text" class="form-control border-0 gift-card" placeholder="discount code/gift card"></input><button class="btn btn-outline-warning btn-sm ml-2" type="button">Apply</button></div>
-        <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Proceed to Pay</button></div>
+        <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button" onClick={submitCheckout}>Proceed to Pay</button></div>
     </div>
 </div>
 </div>
