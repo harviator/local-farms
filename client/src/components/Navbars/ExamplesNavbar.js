@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import { useStoreContext } from "utils/GlobalState";
 
 
 // reactstrap components
@@ -20,6 +21,7 @@ import {
 } from "reactstrap";
 
 import Auth from '../../utils/auth'
+import Cart from "reference/Cart";
 
 const logout = (event) => {
   event.preventDefault()
@@ -27,6 +29,8 @@ const logout = (event) => {
 }
 
 function ExamplesNavbar() {
+  const [state] = useStoreContext()
+
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   React.useEffect(() => {
@@ -56,6 +60,7 @@ function ExamplesNavbar() {
           
           <NavItem>
             <NavLink to="/checkout-page" tag={Link}>
+            {state?.cart.length}
             <i class="fas fa-shopping-cart"></i>
             </NavLink>
           </NavItem>
