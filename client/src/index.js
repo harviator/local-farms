@@ -29,8 +29,8 @@ import "assets/scss/now-ui-kit.scss?v=1.5.0";
 import "assets/demo/demo.css?v=1.5.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 // pages for this kit
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
+// import Index from "views/Index.js";
+// import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/LoginPage.js";
 import LandingPage from "views/LandingPage.js";
 import ProfilePage from "views/ProfilePage.js";
@@ -65,10 +65,10 @@ ReactDOM.render(
     <Switch>
       <Switch>
         <Route path="/LandingPage" render={(props) => <LandingPage {...props} />} />
-        <Route
-          path="/nucleo-icons"
-          render={(props) => <NucleoIcons {...props} />}
-        />
+          {/* <Route
+            path="/nucleo-icons"
+            render={(props) => <NucleoIcons {...props} />}
+          /> */}
         <Route
           path="/landing-page"
           render={(props) => <LandingPage {...props} />}

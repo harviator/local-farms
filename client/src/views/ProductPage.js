@@ -25,7 +25,7 @@ import DefaultFooter from "components/Footers/DefaultFooter.js";
 import Productcard from "../components/Body/ProductCard";
 
 
-import { QUERY_PRODUCTS } from '../../utils/queries'
+import { QUERY_PRODUCTS } from '../utils/queries'
 
 function ProductPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);

@@ -25,8 +25,8 @@ import{
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import ProductForm from "views/examples/ProductForm.js"
-import MyListings from "views/index-sections/MyListings.js"
+// import ProductForm from "views/examples/ProductForm.js"
+// import MyListings from "views/index-sections/MyListings.js"
 
 //Just for DEMO
 const products = [
@@ -273,11 +273,11 @@ function AllProducts() {
              
             <TabPane tabId="iconTabs4">
               <p>
-               <MyListings/>
+               {/* <MyListings/> */}
               </p>
             </TabPane>
             <TabPane tabId="iconTabs5" className="text-left">
-            <ProductForm />
+            {/* <ProductForm /> */}
             </TabPane>            
           </TabContent>
           </Row>          
