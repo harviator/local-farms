@@ -1,4 +1,9 @@
-import React from "react";
+import React, { useState } from 'react';
+
+import { useMutation } from '@apollo/client';
+
+import { LOGIN } from '../../utils/mutations'
+import Auth from '../../utils/auth';
 
 // reactstrap components
 import {
@@ -34,6 +39,57 @@ function LoginPage() {
       document.body.classList.remove("sidebar-collapse");
     };
   }, []);
+
+/// from reference
+
+  const [userFormData, setUserFormData] = useState({ email: '', password: '' });
+  const [validated] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+
+  const [login, {error}] = useMutation(LOGIN);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+  };
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+
+    // check if form has everything (as per react-bootstrap docs)
+    const form = event.currentTarget;
+    // if (form.checkValidity() === false) {
+    //   event.preventDefault();
+    //   event.stopPropagation();
+    // }
+
+    try {
+      const response = await login({
+        variables: {
+          email: userFormData.email,
+          password: userFormData.password
+        }
+      });
+
+      const { token, user } = response;
+      console.log(response);
+      Auth.login(token);
+
+      window.location.replace('/LandingPage')
+
+    } catch (err) {
+      console.error(err);
+      setShowAlert(true);
+    }
+
+    setUserFormData({
+      email: '',
+      password: '',
+    });
+  };
+
+  /////////
+
   return (
     <>
       <ExamplesNavbar />
@@ -48,8 +104,8 @@ function LoginPage() {
         <div className="content">
           <Container>
             <Col className="ml-auto mr-auto" md="4">
-              <Card className="card-login card-plain">
-                <Form action="" className="form" method="">
+              {/* <Card className="card-login card-plain"> */}
+                <Form className="form" onSubmit={handleFormSubmit}>
                   <CardHeader className="text-center">
                     <div className="logo-container">
                       <img
@@ -71,8 +127,11 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="First Name..."
+                        placeholder="Email..."
                         type="text"
+                        name="email"
+                        onChange={handleInputChange}
+                        value={userFormData.email}
                         onFocus={() => setFirstFocus(true)}
                         onBlur={() => setFirstFocus(false)}
                       ></Input>
@@ -89,8 +148,11 @@ function LoginPage() {
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
-                        placeholder="Last Name..."
-                        type="text"
+                        placeholder="Password..."
+                        type="password"
+                        name="password"
+                        onChange={handleInputChange}
+                        value={userFormData.password}
                         onFocus={() => setLastFocus(true)}
                         onBlur={() => setLastFocus(false)}
                       ></Input>
@@ -101,11 +163,10 @@ function LoginPage() {
                       block
                       className="btn-round"
                       color="info"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
                       size="lg"
+                      type="submit"
                     >
-                      Get Started
+                      Login
                     </Button>
                     <div className="pull-left">
                       <h6>
@@ -131,7 +192,7 @@ function LoginPage() {
                     </div>
                   </CardFooter>
                 </Form>
-              </Card>
+              {/* </Card> */}
             </Col>
           </Container>
         </div>
