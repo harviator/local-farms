@@ -130,11 +130,6 @@ function LandingPage() {
                     <p className="category text-info">Model</p>
                     <p className="description">
                       my guy mad popular with the ladies
-                      <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-
-                      for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -180,11 +175,6 @@ function LandingPage() {
                     <p className="category text-info">Designer</p>
                     <p className="description">
                       cute old man
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-
-                      for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -222,13 +212,6 @@ function LandingPage() {
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
-
-                      add some{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-
-                      for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -273,11 +256,6 @@ function LandingPage() {
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
-                      add some{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-                      for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -308,11 +286,7 @@ function LandingPage() {
                     <p className="category text-info">i dont know what he does</p>
                     <p className="description">
                       he did nothing to help towards this project. he probably is clueless to what this entire application
-                      is but like, he is too good looking not to put in the project so this is a little section for him{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                        links
-                      </a>{"https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck "}
-                      for people to be able to follow them outside the site.
+                      is but like, he is too good looking not to put in the project so this is a little section for him
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -333,6 +307,144 @@ function LandingPage() {
                       <i className="fab fa-linkedin"></i>
                     </Button>
 
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+
+                      src={require("assets/img/luca.png").default}
+                    ></img>
+                    <h4 className="title">luca</h4>
+
+                    <p className="category text-info">Fashion</p>
+                    <p className="description">
+                      You can write here details about one of your team members.
+                      You can give more details about what they do. Feel free to
+                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-google-plus"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-youtube"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+
+                      src={require("assets/img/devon.jpg").default}
+                    ></img>
+                    <h4 className="title">devon</h4>
+
+                    <p className="category text-info">Fashion</p>
+                    <p className="description">
+                      You can write here details about one of your team members.
+                      You can give more details about what they do. Feel free to
+                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-google-plus"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-youtube"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button>
+                  </div>
+                </Col>
+                <Col md="4">
+                  <div className="team-player">
+                    <img
+                      alt="..."
+                      className="rounded-circle img-fluid img-raised"
+
+                      src={require("assets/img/deep.png").default}
+                    ></img>
+                    <h4 className="title">Deep Patel</h4>
+
+                    <p className="category text-info">Fashion</p>
+                    <p className="description">
+                      You can write here details about one of your team members.
+                      You can give more details about what they do. Feel free to
+                    </p>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-google-plus"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-youtube"></i>
+                    </Button>
+                    <Button
+                      className="btn-icon btn-round"
+                      color="info"
+
+                      href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fab fa-twitter"></i>
+                    </Button>
                   </div>
                 </Col>
               </Row>
@@ -405,6 +517,7 @@ function LandingPage() {
                   </Button>
                 </div>
               </Col>
+              
             </Row>
           </Container>
         </div>

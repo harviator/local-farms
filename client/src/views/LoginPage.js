@@ -110,7 +110,7 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("../assets/img/drez.jpg").default}
+                        src={require("../assets/img/barn.jpg").default}
                       ></img>
                     </div>
                   </CardHeader>
@@ -144,7 +144,7 @@ function LoginPage() {
                     >
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
-                          <i className="now-ui-icons text_caps-small"></i>
+                          <i className="now-ui-icons objects_key-25"></i>
                         </InputGroupText>
                       </InputGroupAddon>
                       <Input
@@ -176,17 +176,6 @@ function LoginPage() {
                           onClick={(e) => e.preventDefault()}
                         >
                           Create Account
-                        </a>
-                      </h6>
-                    </div>
-                    <div className="pull-right">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Need Help?
                         </a>
                       </h6>
                     </div>
