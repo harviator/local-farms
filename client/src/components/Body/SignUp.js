@@ -160,8 +160,10 @@ function SignUp() {
                 <CardFooter className="text-center">
                   <Button
                     className="btn-neutral btn-round"
+
                     disabled={!(userFormData.username && userFormData.email && userFormData.password)}
                     color="info"
+
                     size="lg"
                     type='submit'
                     variant='success'

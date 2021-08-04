@@ -40,7 +40,7 @@ function ProfilePage() {
         <div className="section">
           <Container>
             <div className="button-container">
-              <Button className="btn-round" color="info" size="lg">
+              <Button className="btn-round" color="success" size="lg">
                 Follow
               </Button>
               <Button
@@ -75,7 +75,7 @@ function ProfilePage() {
                 <h4 className="title text-center">our repo</h4>
                 <div className="nav-align-center">
                   <Nav
-                    className="nav-pills-info nav-pills-just-icons"
+                    className="nav-pills-success nav-pills-just-icons"
                     pills
                     role="tablist"
                   >
