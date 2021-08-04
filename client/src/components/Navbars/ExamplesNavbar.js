@@ -64,7 +64,7 @@ function ExamplesNavbar() {
             <i class="fas fa-shopping-cart"></i>
             </NavLink>
           </NavItem>
-          <NavItem>
+          <NavItem style={{marginTop: 8 }}>
             <a href='/' onClick={logout}>
               Log out
             </a>
