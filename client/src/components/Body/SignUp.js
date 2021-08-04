@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 //import SignupForm from "../reference/Signup/SignUpForm.js";
+import { useMutation } from '@apollo/client'
+import { ADD_USER } from '../../utils/mutations'
+import Auth from '../../utils/auth';
 
 // reactstrap components
 import {
@@ -22,9 +25,52 @@ import {
 // core components
 
 function SignUp() {
-  const [firstFocus, setFirstFocus] = React.useState({ name: ''});
+  const [firstFocus, setFirstFocus] = React.useState({ name: '' });
   const [emailFocus, setEmailFocus] = React.useState({ email: '' });
   const [passwordFocus, setpasswordFocus] = React.useState({ password: '' });
+
+  // set initial form state
+  const [userFormData, setUserFormData] = useState({ username: '', email: '', password: '' });
+  // set state for form validation
+  const [validated] = useState(false);
+  // set state for alert
+  const [showAlert, setShowAlert] = useState(false);
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setUserFormData({ ...userFormData, [name]: value });
+  };
+
+  const [addUser, { error }] = useMutation(ADD_USER)
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    console.log("Are you alive?")
+
+    // check if form has everything (as per react-bootstrap docs)
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    try {
+      const { data } = await addUser({
+        variables: { ...userFormData }
+      })
+      Auth.login(data.addUser.token)
+    } catch (err) {
+      console.error(err);
+      setShowAlert(true);
+    }
+
+    setUserFormData({
+      username: '',
+      email: '',
+      password: '',
+    });
+  };
+
   return (
     <>
       <div
@@ -40,38 +86,11 @@ function SignUp() {
         <Container>
           <Row>
             <Card className="card-signup" data-background-color="blue">
-              <Form action="" className="form" method="">
+              <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                 <CardHeader className="text-center">
                   <CardTitle className="title-up" tag="h3">
                     Sign Up
                   </CardTitle>
-                  <div className="social-line">
-                    <Button
-                      className="btn-neutral btn-icon btn-round"
-                      color="facebook"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-facebook-square"></i>
-                    </Button>
-                    <Button
-                      className="btn-neutral btn-icon btn-round"
-                      color="twitter"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                      size="lg"
-                    >
-                      <i className="fab fa-twitter"></i>
-                    </Button>
-                    <Button
-                      className="btn-neutral btn-icon btn-round"
-                      color="google"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fab fa-google-plus"></i>
-                    </Button>
-                  </div>
                 </CardHeader>
                 <CardBody>
                   <InputGroup
@@ -85,8 +104,12 @@ function SignUp() {
                       </InputGroupText>
                     </InputGroupAddon>
                     <Input
-                      placeholder="First Name..."
+                      placeholder="Username..."
                       type="text"
+                      name='username'
+                      onChange={handleInputChange}
+                      value={userFormData.username}
+                      required
                       onFocus={() => setFirstFocus(true)}
                       onBlur={() => setFirstFocus(false)}
                     ></Input>
@@ -103,7 +126,11 @@ function SignUp() {
                     </InputGroupAddon>
                     <Input
                       placeholder="Email..."
-                      type="text"
+                      type='email'
+                      name='email'
+                      onChange={handleInputChange}
+                      value={userFormData.email}
+                      required
                       onFocus={() => setEmailFocus(true)}
                       onBlur={() => setEmailFocus(false)}
                     ></Input>
@@ -120,22 +147,27 @@ function SignUp() {
                     </InputGroupAddon>
                     <Input
                       placeholder="Password..."
-                      type="text"
+                      type='password'
+                      name='password'
+                      onChange={handleInputChange}
+                      value={userFormData.password}
+                      required
                       onFocus={() => setpasswordFocus(true)}
                       onBlur={() => setpasswordFocus(false)}
                     ></Input>
-                  </InputGroup>                  
+                  </InputGroup>
                 </CardBody>
                 <CardFooter className="text-center">
-                  <Button 
+                  <Button
                     className="btn-neutral btn-round"
-                    //disabled={!(firstFocus.name && emailFocus.email && passwordFocus.password)}
-                    color="success"
-                    href="/"
+
+                    disabled={!(userFormData.username && userFormData.email && userFormData.password)}
+                    color="info"
+
                     size="lg"
                     type='submit'
                     variant='success'
-                   
+
                   >
                     Get Started
                   </Button>

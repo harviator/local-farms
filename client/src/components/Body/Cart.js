@@ -52,9 +52,7 @@ const Cart = () => {
         const productIds = [];
 
         state.cart.forEach((item) => {
-            for (let i = 0; i < item.purchaseQuantity; i++) {
-                productIds.push(item._id);
-            }
+            productIds.push(item._id);
             console.log(productIds);
         });
 
@@ -97,14 +95,4 @@ const Cart = () => {
 };
 
 export default Cart;
-
-
-
-/*
-Notes:
-
-Left overs:
- -import './style.css';
-
-*/
 
