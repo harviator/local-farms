@@ -125,9 +125,7 @@ function LandingPage() {
                     <h4 className="title">Devesh Patel</h4>
                     <p className="category text-success">Super Model</p>
                     <p className="description">
-                      you better wear sunglasses cause this guys smile will blind you.
-                      hes charming hes smart and he will do all your front end needs.
-                      if the perfect front end devopler was in the dictionary they would add him as a refrence.
+                    you better wear sunglasses cause this guys smile will blind you. hes charming hes smart and he will do all your front end needs. if the perfect front end developer was in the dictionary they would add him as a reference.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -209,8 +207,8 @@ function LandingPage() {
 
                     <p className="category text-success">Back-End Dev</p>
                     <p className="description">
-                      he may be popular with the ladies but hes also poular with syntax errors.
-                      dont let it fool you though he managed our entire back end for this project and 
+                    he may be popular with the ladies but hes also popular with syntax errors.
+                      don't let it fool you though he managed our entire back end for this project and 
                       its functionality
                     </p>
                     <Button
@@ -254,11 +252,8 @@ function LandingPage() {
                     <h4 className="title">Syed Ahsan Rizvi</h4>
                     <p className="category text-success">Front-End Dev</p>
                     <p className="description">
-                      syed was a good group member contributing to our application.
-                      continuously giving us good insights on how to add and impliment new features to make our apllication better.
-                      
-
-
+                    syed was a good group member contributing to our application.
+                      continuously giving us good insights on how to add and implement new features to make our application better.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -324,9 +319,9 @@ function LandingPage() {
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      a absaloute legend, whenever you needed him he would be there.
-                      he may not leave his place but we love him for it because then we would have never recived help
-                      throughout this bootcamp. he is the Manjiro to our Manji group.
+                    a absolute legend, whenever you needed him he would be there.
+                      he may not leave his place but we love him for it because then we would have never received help
+                      throughout this boot-camp. he is the Manjiro to our Manji group.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -371,9 +366,9 @@ function LandingPage() {
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      to many he is a mystery a little is known about him but one thing that is certain
-                      he is one of the best coders this bootcamp has seen. he is always there when you need him
-                      and is always pushing our members to persue code and never get discoureged. rumours has it
+                    to many he is a mystery a little is known about him but one thing that is certain
+                      he is one of the best coders this boot-camp has seen. he is always there when you need him
+                      and is always pushing our members to pursue code and never get discouraged. rumors has it
                       that he is still in the big apple waiting for bobby shmurda's hat to come down.
                     </p>
                     <Button
@@ -419,11 +414,9 @@ function LandingPage() {
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      to many he is gandalf the dev, and he shall not let you pass until you complete the bootcamp.
+                    to many he is Gandalf the dev, and he shall not let you pass until you complete the boot-camp.
                       but do not let this old man fool you because he still has hands like Manny Pacquiao and when you ask him to repeat himself
-                      he is not afraid to use them. he is a legend in hemself.
-
-
+                      he is not afraid to use them. he is a legend in himself.
                     </p>
                     <Button
                       className="btn-icon btn-round"
