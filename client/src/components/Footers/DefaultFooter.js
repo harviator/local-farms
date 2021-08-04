@@ -21,22 +21,6 @@ function DefaultFooter() {
                   Local Farms
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
-                  target="_blank"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
             </ul>
           </nav>
           <div className="copyright" id="copyright">
@@ -45,14 +29,14 @@ function DefaultFooter() {
               href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
               target="_blank"
             >
-              the Mandem
+              the best Devs
             </a>
             . Coded by{" "}
             <a
-              href="https://www.creative-tim.com?ref=nukr-default-footer"
+              href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
               target="_blank"
             >
-              the same Mandem
+              the even better Devs
             </a>
             .
           </div>

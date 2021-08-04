@@ -18,22 +18,6 @@ function TransparentFooter() {
                 Local Farms
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
-                target="_blank"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/watch?v=AyOqGRjVtls&ab_channel=GeekHeavy"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
           </ul>
         </nav>
         <div className="copyright" id="copyright">
