@@ -123,9 +123,11 @@ function LandingPage() {
                       src={require("assets/img/PROFILEPIC.jpg").default}
                     ></img>
                     <h4 className="title">Devesh Patel</h4>
-                    <p className="category text-success">Model</p>
+                    <p className="category text-success">Super Model</p>
                     <p className="description">
-                      my guy mad popular with the ladies
+                      you better wear sunglasses cause this guys smile will blind you.
+                      hes charming hes smart and he will do all your front end needs.
+                      if the perfect front end devopler was in the dictionary they would add him as a refrence.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -168,9 +170,10 @@ function LandingPage() {
                       src={require("assets/img/harviator2.png").default}
                     ></img>
                     <h4 className="title">Jon Harvey</h4>
-                    <p className="category text-success">Designer</p>
+                    <p className="category text-success">Back-End Dev</p>
                     <p className="description">
-                      cute old man
+                      he may have some bad jokes but he knows his way around a back-end.
+                      And hes a decent back-end developer too!    
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -204,10 +207,11 @@ function LandingPage() {
                     ></img>
                     <h4 className="title">Andres Aponte</h4>
 
-                    <p className="category text-success">Fashion</p>
+                    <p className="category text-success">Back-End Dev</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
+                      he may be popular with the ladies but hes also poular with syntax errors.
+                      dont let it fool you though he managed our entire back end for this project and 
+                      its functionality
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -247,11 +251,14 @@ function LandingPage() {
                       className="rounded-circle img-fluid img-raised"
                       src={require("assets/img/syed.jpg").default}
                     ></img>
-                    <h4 className="title">syed ashan</h4>
-                    <p className="category text-success">Designer</p>
+                    <h4 className="title">Syed Ahsan Rizvi</h4>
+                    <p className="category text-success">Front-End Dev</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
+                      syed was a good group member contributing to our application.
+                      continuously giving us good insights on how to add and impliment new features to make our apllication better.
+                      
+
+
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -313,12 +320,13 @@ function LandingPage() {
 
                       src={require("assets/img/luca.png").default}
                     ></img>
-                    <h4 className="title">luca</h4>
+                    <h4 className="title">Luca Beyrute</h4>
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
+                      a absaloute legend, whenever you needed him he would be there.
+                      he may not leave his place but we love him for it because then we would have never recived help
+                      throughout this bootcamp. he is the Manjiro to our Manji group.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -363,8 +371,10 @@ function LandingPage() {
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
+                      to many he is a mystery a little is known about him but one thing that is certain
+                      he is one of the best coders this bootcamp has seen. he is always there when you need him
+                      and is always pushing our members to persue code and never get discoureged. rumours has it
+                      that he is still in the big apple waiting for bobby shmurda's hat to come down.
                     </p>
                     <Button
                       className="btn-icon btn-round"
@@ -409,8 +419,11 @@ function LandingPage() {
 
                     <p className="category text-success">Fashion</p>
                     <p className="description">
-                      You can write here details about one of your team members.
-                      You can give more details about what they do. Feel free to
+                      to many he is gandalf the dev, and he shall not let you pass until you complete the bootcamp.
+                      but do not let this old man fool you because he still has hands like Manny Pacquiao and when you ask him to repeat himself
+                      he is not afraid to use them. he is a legend in hemself.
+
+
                     </p>
                     <Button
                       className="btn-icon btn-round"
