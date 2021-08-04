@@ -83,8 +83,8 @@
         @include dropdown-colors(darken($primary-color, 3%),$opacity-8,$white-color, $opacity-2);
     }
 
-    &.dropdown-info{
-        @include dropdown-colors(darken($info-color, 3%),$opacity-8,$white-color, $opacity-2);
+    &.dropdown-success{
+        @include dropdown-colors(darken($success-color, 3%),$opacity-8,$white-color, $opacity-2);
     }
 
     &.dropdown-danger{

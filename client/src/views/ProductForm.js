@@ -68,7 +68,7 @@ function ProductForm(){
           <FormGroup check>
             <Label check>
               <Input type="checkbox"></Input>
-              All information I have provided is correct{" "}
+              All successrmation I have provided is correct{" "}
               <span className="form-check-sign">
                 <span className="check"></span>
               </span>

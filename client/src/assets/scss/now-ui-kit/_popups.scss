@@ -39,8 +39,8 @@
         @include popover-color($primary-color, $white-color);
     }
 
-    &.popover-info{
-        @include popover-color($info-color, $white-color);
+    &.popover-success{
+        @include popover-color($success-color, $white-color);
     }
 
     &.popover-warning{

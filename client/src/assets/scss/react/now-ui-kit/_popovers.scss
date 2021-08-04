@@ -13,11 +13,11 @@
   }
 }
 
-.popover-info{
+.popover-success{
   .popover{
-    @include popover-color($info-color, $white-color);
+    @include popover-color($success-color, $white-color);
     .arrow:after {
-      border-left-color: $info-color;
+      border-left-color: $success-color;
     }
   }
 }

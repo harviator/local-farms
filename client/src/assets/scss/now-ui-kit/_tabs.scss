@@ -72,11 +72,11 @@
         }
     }
 
-    &.nav-tabs-info{
+    &.nav-tabs-success{
         > .nav-item{
             > .nav-link{
                 &.active{
-                    background-color: $info-color;
+                    background-color: $success-color;
                 }
             }
         }

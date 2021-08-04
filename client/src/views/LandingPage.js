@@ -63,7 +63,7 @@ function LandingPage() {
 
                     }}
                   >
-                    <p className="blockquote blockquote-info">
+                    <p className="blockquote blockquote-success">
                     "The farmer is the only man in our economy who buys everything at retail, sells everything at wholesale, and pays the freight both ways." <br></br>
                       <br></br>
                       <small>-John F. Kennedy</small>
@@ -123,13 +123,13 @@ function LandingPage() {
                       src={require("assets/img/PROFILEPIC.jpg").default}
                     ></img>
                     <h4 className="title">Devesh Patel</h4>
-                    <p className="category text-info">Model</p>
+                    <p className="category text-success">Model</p>
                     <p className="description">
                       my guy mad popular with the ladies
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -139,7 +139,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -149,7 +149,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -168,13 +168,13 @@ function LandingPage() {
                       src={require("assets/img/harviator2.png").default}
                     ></img>
                     <h4 className="title">Jon Harvey</h4>
-                    <p className="category text-info">Designer</p>
+                    <p className="category text-success">Designer</p>
                     <p className="description">
                       cute old man
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -184,7 +184,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -204,14 +204,14 @@ function LandingPage() {
                     ></img>
                     <h4 className="title">Andres Aponte</h4>
 
-                    <p className="category text-info">Fashion</p>
+                    <p className="category text-success">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -221,7 +221,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -231,7 +231,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
@@ -248,14 +248,14 @@ function LandingPage() {
                       src={require("assets/img/syed.jpg").default}
                     ></img>
                     <h4 className="title">syed ashan</h4>
-                    <p className="category text-info">Designer</p>
+                    <p className="category text-success">Designer</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -263,7 +263,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -279,14 +279,14 @@ function LandingPage() {
                       src={require("../assets/img/playboi.png").default}
                     ></img>
                     <h4 className="title">Patrick 'Playboy' Brodie</h4>
-                    <p className="category text-info">i dont know what he does</p>
+                    <p className="category text-success">i dont know what he does</p>
                     <p className="description">
                       he did nothing to help towards this project. he probably is clueless to what this entire application
                       is but like, he is too good looking not to put in the project so this is a little section for him
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
                       onClick={(e) => e.preventDefault()}
@@ -296,7 +296,7 @@ function LandingPage() {
 
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
                     >
@@ -315,14 +315,14 @@ function LandingPage() {
                     ></img>
                     <h4 className="title">luca</h4>
 
-                    <p className="category text-info">Fashion</p>
+                    <p className="category text-success">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -332,7 +332,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -342,7 +342,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
@@ -361,14 +361,14 @@ function LandingPage() {
                     ></img>
                     <h4 className="title">devon</h4>
 
-                    <p className="category text-info">Fashion</p>
+                    <p className="category text-success">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -378,7 +378,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -388,7 +388,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
@@ -407,14 +407,14 @@ function LandingPage() {
                     ></img>
                     <h4 className="title">Deep Patel</h4>
 
-                    <p className="category text-info">Fashion</p>
+                    <p className="category text-success">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -424,7 +424,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 
@@ -434,7 +434,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="info"
+                      color="success"
 
                       href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
                       onClick={(e) => e.preventDefault()}
@@ -502,7 +502,7 @@ function LandingPage() {
                   <Button
                     block
                     className="btn-round"
-                    color="info"
+                    color="success"
 
                     href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=DeeckPeeck"
 

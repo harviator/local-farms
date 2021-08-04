@@ -91,13 +91,13 @@
         }
     }
 
-    &.nav-pills-info{
+    &.nav-pills-success{
         .nav-item {
             .nav-link.active{
                 &,
                 &:focus,
                 &:hover{
-                    background-color: $brand-info;
+                    background-color: $brand-success;
                 }
             }
         }

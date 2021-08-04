@@ -29,8 +29,8 @@
 .badge-primary{
     @include badge-color($primary-color);
 }
-.badge-info{
-    @include badge-color($info-color);
+.badge-success{
+    @include badge-color($success-color);
 }
 .badge-success{
     @include badge-color($success-color);
