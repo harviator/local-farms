@@ -325,18 +325,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 		}
 	}
 
-    &.slider-info{
+    &.slider-success{
         & .noUi-connect,
         &.noUi-connect{
-            background-color: $brand-info;
+            background-color: $brand-success;
         }
 
 		&.noUi-target{
-			background-color: $info-color-opacity;
+			background-color: $success-color-opacity;
 		}
 
 		& .noUi-handle{
-			background-color: $brand-info;
+			background-color: $brand-success;
 		}
     }
     &.slider-success{

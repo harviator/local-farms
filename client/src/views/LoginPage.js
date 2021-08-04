@@ -162,7 +162,7 @@ function LoginPage() {
                     <Button
                       block
                       className="btn-round"
-                      color="info"
+                      color="success"
                       size="lg"
                       type="submit"
                     >

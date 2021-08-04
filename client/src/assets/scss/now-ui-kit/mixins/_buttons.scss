@@ -64,13 +64,13 @@
             }
         }
 
-        &.btn-info{
-            color: $info-color;
+        &.btn-success{
+            color: $success-color;
 
             &:hover,
             &:focus,
             &:active{
-                color: $info-states-color !important;
+                color: $success-states-color !important;
             }
         }
 

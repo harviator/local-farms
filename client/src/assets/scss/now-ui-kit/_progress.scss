@@ -64,18 +64,18 @@
         }
     }
 
-    &.progress-info{
+    &.progress-success{
         .progress{
-            background: $info-color-opacity;
+            background: $success-color-opacity;
         }
 
         .progress-bar{
-            background: $brand-info;
+            background: $brand-success;
         }
 
         .progress-value,
         .progress-badge{
-            color: $brand-info;
+            color: $brand-success;
         }
     }
 

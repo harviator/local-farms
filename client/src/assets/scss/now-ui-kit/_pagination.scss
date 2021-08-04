@@ -58,13 +58,13 @@
     }
 
     // Colors
-    &.pagination-info{
+    &.pagination-success{
         .page-item.active > .page-link{
             &,
             &:focus,
             &:hover{
-                background-color: $brand-info;
-                border-color: $brand-info;
+                background-color: $brand-success;
+                border-color: $brand-success;
             }
         }
     }

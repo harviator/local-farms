@@ -130,7 +130,7 @@ function SignUp() {
                   <Button 
                     className="btn-neutral btn-round"
                     //disabled={!(firstFocus.name && emailFocus.email && passwordFocus.password)}
-                    color="info"
+                    color="success"
                     href="/"
                     size="lg"
                     type='submit'
