@@ -24,6 +24,8 @@ Local Farms is an e-commerce website that connects you to your local farms. You 
 * Node.js
 * JavaScript, HTML, CSS
 * AtlasDB
+* Redux
+* Stripe
 
 ### Usage
 To use this website, simply go to the deployed
